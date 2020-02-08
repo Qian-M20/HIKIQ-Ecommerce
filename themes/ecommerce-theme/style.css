@@ -106,5 +106,9 @@ Tags:
     font-size:50px;
 }
 
+/* styling quote block */
+.is-style-fancy-quote {
+    font-family:cursive;
+}
 
 

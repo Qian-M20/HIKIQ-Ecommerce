@@ -166,15 +166,12 @@ if ( ! function_exists( 'ecommerce_theme_setup' ) ) :
 		 */ 
 		add_theme_support( 'disable-custom-colors' );
 		
-
 		/**
 		 * add theme support for custom font size choice 
 		 */
 
 
 
-
-	
 
 		/**
 		 * Add support for core custom logo.
@@ -241,6 +238,11 @@ add_action( 'wp_enqueue_scripts', 'ecommerce_theme_scripts' );
  * Custom template tags for this theme.
  */
 require get_template_directory() . '/inc/template-tags.php';
+
+/**
+ * Custom block editor
+ */
+require get_template_directory() . '/inc/block-editor.php';
 
 /**
  * Functions which enhance the theme by hooking into WordPress.
