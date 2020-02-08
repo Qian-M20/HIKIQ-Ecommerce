@@ -107,15 +107,59 @@ if ( ! function_exists( 'ecommerce_theme_setup' ) ) :
 			array(
 				'name' => __( 'very light gray', 'ecommerce-theme' ),
 				'slug' => 'very-light-gray',
+				'color' => '#f1f1f1',
+			),
+			array(
+				'name' => __( 'black', 'ecommerce-theme' ),
+				'slug' => 'black',
 				'color' => '#000',
 			),
 			array(
-				'name' => __( 'white', 'sample-theme' ),
+				'name' => __( 'white', 'ecommerce-theme' ),
 				'slug' => 'white',
-				'color' => '#f1f1f1',
+				'color' => '#FFF',
 			),
+			array(
+				'name' => __( 'very light yellow', 'ecommerce-theme' ),
+				'slug' => 'very-light-yellow',
+				'color' => '#fffa81',
+			)
+		
 
 		) );
+
+		/**
+		 * add theme support for custom font size choice 
+		 */
+
+		add_theme_support( 'editor-font-sizes', array(
+			array(
+				'name' => __( 'Small', 'themeLangDomain' ),
+				'size' => 16,
+				'slug' => 'small'
+			),
+			array(
+				'name' => __( 'Regular', 'themeLangDomain' ),
+				'size' => 22,
+				'slug' => 'regular'
+			),
+			array(
+				'name' => __( 'Large', 'themeLangDomain' ),
+				'size' => 36,
+				'slug' => 'large'
+			),
+			array(
+				'name' => __( 'Huge', 'themeLangDomain' ),
+				'size' => 50,
+				'slug' => 'huge'
+			)
+		) );
+
+		/**
+		 * add theme support disable font size choice 
+		 */
+
+		add_theme_support('disable-custom-font-sizes');
 
 		/**
 		 * add theme support for disabling custom color choice 
