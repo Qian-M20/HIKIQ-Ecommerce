@@ -79,6 +79,58 @@ if ( ! function_exists( 'ecommerce_theme_setup' ) ) :
 		 */
 		add_theme_support( 'wp-block-styles' );
 		
+		/**
+		 * Add theme support for custom color Palettes
+		 */
+		
+		add_theme_support( 'editor-color-palette', array(
+			array(
+				'name' => __( 'black blue', 'ecommerce-theme' ),
+				'slug' => 'black-blue',
+				'color' => '#09090B',
+			),
+			array(
+				'name' => __( 'dark cyan', 'ecommerce-theme' ),
+				'slug' => 'dark-cyan',
+				'color' => '#0ba987',
+			),
+			array(
+				'name' => __( 'vivid red', 'ecommerce-theme' ),
+				'slug' => 'vivid-red',
+				'color' => '#f10205',
+			),
+			array(
+				'name' => __( 'strong red', 'ecommerce-theme' ),
+				'slug' => 'strong-red',
+				'color' => '#c11e1c',
+			),
+			array(
+				'name' => __( 'very light gray', 'ecommerce-theme' ),
+				'slug' => 'very-light-gray',
+				'color' => '#000',
+			),
+			array(
+				'name' => __( 'white', 'sample-theme' ),
+				'slug' => 'white',
+				'color' => '#f1f1f1',
+			),
+
+		) );
+
+		/**
+		 * add theme support for disabling custom color choice 
+		 */ 
+		add_theme_support( 'disable-custom-colors' );
+		
+
+		/**
+		 * add theme support for custom font size choice 
+		 */
+
+
+
+
+	
 
 		/**
 		 * Add support for core custom logo.
