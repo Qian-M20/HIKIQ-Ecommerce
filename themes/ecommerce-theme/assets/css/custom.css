@@ -1,0 +1,55 @@
+/* styling for header */
+
+.site-branding img {
+    width:100%;
+}
+
+.menu-primary-menu-container {
+    width:100%;
+}
+
+ul#primary-menu {
+    display:flex;
+    justify-content: space-around;
+}
+
+ul#primary-menu li {
+    list-style: none;
+}
+
+ul#primary-menu li a{
+    text-decoration: none;
+    font-size:1.5em;
+    color:#A9A9A9;
+}
+
+/* search form styling */
+.widget-area {
+    height:100%;
+    display:flex;
+    align-items: center;
+}
+.search-form span {
+    display:none;
+}
+
+input.search-field {
+    float:left;
+    margin-right:2px;
+    padding:5px;
+    border-radius:0.5rem;
+    font-size: 1.2em;
+}
+
+input.search-submit {
+    padding:5px;
+    font-size:1.2em;
+    font-family:Arial, Helvetica, sans-serif;
+}
+
+
+/* .main-navigation {
+    display:flex;
+    align-items: center;
+    justify-content: space-around;
+} */
