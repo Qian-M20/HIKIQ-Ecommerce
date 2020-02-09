@@ -2,9 +2,18 @@
 register_block_style(
 	'core/quote',
 	array(
-		'name'         => 'blue-quote',
-		'label'        => esc_html__( 'Blue Quote', 'sample-theme' ),
-		'inline_style' => '.wp-block-quote.is-style-blue-quote { color: blue; }',
+		'name'         => 'red-quote',
+		'label'        => esc_html__( 'Red Quote', 'ecommerce-theme' ),
+		'inline_style' => '.wp-block-quote.is-style-red-quote { background-color: red; }',
+	)
+);
+
+register_block_style(
+	'core/heading',
+	array (
+		'name'         => 'blue-heading',
+		'label'        => esc_html__( 'Blue Heading', 'ecommerce-theme' ),
+		'inline_style' => '.is-style-blue-heading { color: blue; }',
 	)
 );
 

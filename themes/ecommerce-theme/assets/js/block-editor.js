@@ -23,9 +23,9 @@ wp.domReady( function() {
     } );
 } );
 
-wp.domReady( function() {
-    wp.blocks.registerBlockStyle( 'core/heading', {
-        name: 'purpleHeading',
-        label: 'purpleHeading',
-    } );
-} );
+// wp.domReady( function() {
+//     wp.blocks.registerBlockStyle( 'core/heading', {
+//         name: 'purpleHeading',
+//         label: 'purpleHeading',
+//     } );
+// } );
