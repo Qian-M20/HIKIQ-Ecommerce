@@ -35,3 +35,15 @@ function ecommerce_theme_pingback_header() {
 	}
 }
 add_action( 'wp_head', 'ecommerce_theme_pingback_header' );
+
+/**
+ * load block editor js 
+ */
+function ecommerce_theme_enqueue_block_editor_assets() {
+    wp_enqueue_script(
+        'block-editor-js',
+		get_template_directory_uri() . '/assets/js/block-editor.js',
+		array('wp-blocks', 'wp-dom-ready','wp-edit-post')
+    );
+}
+add_action( 'enqueue_block_editor_assets', 'ecommerce_theme_enqueue_block_editor_assets' );

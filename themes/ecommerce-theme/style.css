@@ -9,3 +9,106 @@ License: GNU General Public License v2 or later
 License URI: LICENSE
 Text Domain: ecommerce-theme
 Tags: 
+*/
+
+/* customize align wide properties */
+.alignwide {
+	max-width: 80vw;
+}
+
+.alignfull {
+    max-width:100vw;
+    margin:0;
+}
+
+/* customize color Palettes */
+
+.has-dark-cyan-color {
+    color:#0ba987;
+}
+
+.has-dark-cyan-background-color {
+    background-color:#0ba987;
+}
+
+.has-black-blue-color {
+    color:#09090B;
+}
+
+.has-black-blue-background-color {
+    background-color:#09090B;
+}
+
+.has-vivid-red-color {
+    color:#f10205;
+}
+
+.has-vivid-red-background-color {
+    background-color:#f10205;
+}
+
+.has-strong-red-color {
+    color:#c11e1c;
+}
+
+.has-strong-red-background-color {
+    background-color:#c11e1c;
+}
+
+.has-very-light-gray-color {
+    color:#f1f1f1;
+}
+
+.has-very-light-gray-background-color {
+    background-color:#f1f1f1;
+}
+
+
+.has-white-color {
+	color: #fff;
+}
+
+.has-white-background-color {
+	background-color: #fff;
+}
+
+.has-black-color {
+	color: #000;
+}
+
+.has-black-background-color {
+	background-color: #000;
+}
+
+.has-very-light-yellow-color {
+	color: #fffa81;
+}
+
+.has-very-light-yellow-background-color {
+	background-color: #fffa81;
+}
+
+/* font size */
+
+.has-small-font-size {
+    font-size:16px;
+}
+
+.has-regular-font-size {
+    font-size:22px;
+}
+
+.has-large-font-size {
+    font-size:36px;
+}
+
+.has-huge-font-size {
+    font-size:50px;
+}
+
+/* styling quote block */
+.is-style-fancy-quote {
+    font-family:cursive;
+}
+
+

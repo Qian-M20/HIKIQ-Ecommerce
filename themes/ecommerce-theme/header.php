@@ -22,30 +22,18 @@
 
 <body <?php body_class(); ?>>
 <div id="page" class="site">
-	<a class="skip-link screen-reader-text" href="#content"><?php esc_html_e( 'Skip to content', 'ecommerce-theme' ); ?></a>
+	<!-- <a class="skip-link screen-reader-text" href="#content">
+		<?php esc_html_e( 'Skip to content', 'ecommerce-theme' ); ?>
+	</a> -->
 
-	<header id="masthead" class="site-header">
-		<div class="site-branding">
-			<?php
-			the_custom_logo();
-			if ( is_front_page() && is_home() ) :
-				?>
-				<h1 class="site-title"><a href="<?php echo esc_url( home_url( '/' ) ); ?>" rel="home"><?php bloginfo( 'name' ); ?></a></h1>
-				<?php
-			else :
-				?>
-				<p class="site-title"><a href="<?php echo esc_url( home_url( '/' ) ); ?>" rel="home"><?php bloginfo( 'name' ); ?></a></p>
-				<?php
-			endif;
-			$ecommerce_theme_description = get_bloginfo( 'description', 'display' );
-			if ( $ecommerce_theme_description || is_customize_preview() ) :
-				?>
-				<p class="site-description"><?php echo $ecommerce_theme_description; /* WPCS: xss ok. */ ?></p>
-			<?php endif; ?>
+	<header id="masthead" class="site-header grid-x grid-margin-x">
+		<div class="cell large-1 medium-1"></div>
+		<div class="site-branding cell large-2 medium-2">
+			<?php the_custom_logo();?>
 		</div><!-- .site-branding -->
 
-		<nav id="site-navigation" class="main-navigation">
-			<button class="menu-toggle" aria-controls="primary-menu" aria-expanded="false"><?php esc_html_e( 'Primary Menu', 'ecommerce-theme' ); ?></button>
+		<nav id="site-navigation" class="main-navigation cell large-5 medium-5 grid-x align-middle">
+			<!-- <button class="menu-toggle" aria-controls="primary-menu" aria-expanded="false"><?php esc_html_e( 'Primary Menu', 'ecommerce-theme' ); ?></button> -->
 			<?php
 			wp_nav_menu( array(
 				'theme_location' => 'menu-1',
@@ -53,6 +41,22 @@
 			) );
 			?>
 		</nav><!-- #site-navigation -->
+		<div class="cell large-3 medium-3">
+			<?php
+				if ( ! is_active_sidebar( 'sidebar-1' ) ) {
+					return;
+				}
+			?>
+			<div id="secondary" class="widget-area">
+				<?php dynamic_sidebar( 'sidebar-1' ); ?>
+			</div>
+		</div>
+
+		<div class="cell large-1 medium-1"></div>
+
+
+		
+
 	</header><!-- #masthead -->
 
 	<div id="content" class="site-content">
