@@ -41,3 +41,10 @@ wp.domReady( function() {
         label: 'About Poster',
     } );
 } );
+
+wp.domReady( function() {
+    wp.blocks.registerBlockStyle( 'core/paragraph', {
+        name: 'red-div',
+        label: 'Red Div',
+    } );
+} );

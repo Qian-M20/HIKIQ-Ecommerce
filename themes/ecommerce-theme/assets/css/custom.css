@@ -179,4 +179,20 @@ input.search-submit {
 /* about page */
 .wp-block-image.size-large.is-style-about-poster{
     margin:0;
+    
+}
+
+.wp-block-image img {
+    width:100%;
+    background-position: center;
+    background-size: cover;
+}
+
+/* Red div */
+.is-style-red-div {
+    width: 100%;
+    height: 610px;
+    background: #c11e1c;
+    margin: 0;
+    padding: 0;
 }
