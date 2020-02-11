@@ -204,3 +204,12 @@ input.search-submit {
     text-align: left;
     font-size: 50px;
 }
+
+.wp-block-button__link.has-text-color.has-black-blue-color.has-background.has-white-background-color{
+    transition: all .3s ease;
+}
+
+.wp-block-button__link.has-text-color.has-black-blue-color.has-background.has-white-background-color:hover{
+    background: black;
+    color: white;
+}
