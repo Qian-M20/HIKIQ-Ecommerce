@@ -63,3 +63,9 @@ wp.domReady( function() {
     } );
 } );
 
+wp.domReady( function() {
+    wp.blocks.registerBlockStyle( 'core/quote', {
+        name: 'about-quote',
+        label: 'About Quote',
+    } );
+} );

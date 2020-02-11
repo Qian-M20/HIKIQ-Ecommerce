@@ -213,3 +213,8 @@ input.search-submit {
     background: black;
     color: white;
 }
+
+.wp-block-quote.is-style-about-quote p{
+    font-family: 'Gill Sans', sans-serif;
+    font-size: 27px;
+}
