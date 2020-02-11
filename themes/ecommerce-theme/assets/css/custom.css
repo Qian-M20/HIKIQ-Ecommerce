@@ -217,4 +217,5 @@ input.search-submit {
 .wp-block-quote.is-style-about-quote p{
     font-family: 'Gill Sans', sans-serif;
     font-size: 27px;
+    margin: 10px 100px;
 }
