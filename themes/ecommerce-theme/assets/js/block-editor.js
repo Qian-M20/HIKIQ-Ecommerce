@@ -48,3 +48,10 @@ wp.domReady( function() {
         label: 'Red Div',
     } );
 } );
+
+wp.domReady( function() {
+    wp.blocks.registerBlockStyle( 'core/heading', {
+        name: 'aboutUs-header',
+        label: 'About Us Header',
+    } );
+} );
