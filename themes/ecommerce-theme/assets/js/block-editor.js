@@ -55,3 +55,11 @@ wp.domReady( function() {
         label: 'About Us Header',
     } );
 } );
+
+wp.domReady( function() {
+    wp.blocks.registerBlockStyle( 'core/paragraph', {
+        name: 'newsletter-ad',
+        label: 'Newsletter Ad',
+    } );
+} );
+
