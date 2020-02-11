@@ -126,6 +126,10 @@ input.search-submit {
     font-size:0.8em;
 } 
 
+/* styling for button */
+.wp-block-button.is-style-promo-button a {
+    font-family: futura; box-shadow: 10px 10px 8px #888888; 
+}
 
 /* styling for footer */
 .footerLinks{

@@ -23,3 +23,12 @@ wp.domReady( function() {
         label: 'Red Gallery',
     } );
 } );
+
+
+
+wp.domReady( function() {
+    wp.blocks.registerBlockStyle( 'core/button', {
+        name: 'promo-button',
+        label: 'Promo Button',
+    } );
+} );
