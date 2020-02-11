@@ -17,4 +17,14 @@ register_block_style(
 	)
 );
 
+// register_block_style(
+// 	'core/gallery',
+// 	array (
+// 		'name'         => 'red-gallery',
+// 		'label'        => esc_html__( 'Red Gallery', 'ecommerce-theme' ),
+// 		'inline_style' => '.is-style-blue-heading { background-color: #f10205; }',
+// 	)
+// );
+
+
 ?>

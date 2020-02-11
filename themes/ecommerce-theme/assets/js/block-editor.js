@@ -9,13 +9,6 @@ wp.domReady( function() {
     } );
 } );
 
-// wp.domReady( function() {
-//     wp.blocks.registerBlockStyle( 'core/quote', {
-//         name: 'blue-quote',
-//         label: 'Blue Quote',
-//     } );
-// } );
-
 wp.domReady( function() {
     wp.blocks.registerBlockStyle( 'core/heading', {
         name: 'underline',
@@ -23,9 +16,10 @@ wp.domReady( function() {
     } );
 } );
 
-// wp.domReady( function() {
-//     wp.blocks.registerBlockStyle( 'core/heading', {
-//         name: 'purpleHeading',
-//         label: 'purpleHeading',
-//     } );
-// } );
+
+wp.domReady( function() {
+    wp.blocks.registerBlockStyle( 'core/gallery', {
+        name: 'red-gallery',
+        label: 'Red Gallery',
+    } );
+} );

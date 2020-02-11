@@ -14,7 +14,7 @@
 	</div><!-- #content -->
 
 	<footer id="colophon" class="site-footer">
-		<div class="footerLinks">
+		<div class="footerLinks grid-x grid-margin-x">
 			<nav id="social-navigation" class="main-navigation cell large-12 medium-12 grid-x align-middle">
 					<!-- <button class="menu-toggle" aria-controls="primary-menu" aria-expanded="false"><?php esc_html_e( 'Primary Menu', 'ecommerce-theme' ); ?></button> -->
 					<?php

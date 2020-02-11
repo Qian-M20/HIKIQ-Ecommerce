@@ -72,6 +72,48 @@ input.search-submit {
 /* styling for the homepage */
 
 
+/* style for the gallery */
+.is-style-red-gallery {
+    height:50vh;
+    width:80%;
+    margin-left:auto;
+    margin-right:auto;
+}
+
+
+.is-style-red-gallery figcaption.blocks-gallery-item__caption {
+    font-size:1.5em;
+    font-family: futura;
+    text-align: left;
+}
+.is-style-red-gallery ul li {
+    display:flex;
+    align-items: center;
+    background-color: #f10205;
+    height:40vh;
+}
+
+.is-style-red-gallery ul li figure{
+    width:60%;
+    height:60%;
+    display:flex;
+    align-items: center;
+}
+
+.blocks-gallery-grid .blocks-gallery-image figure, .blocks-gallery-grid .blocks-gallery-item figure, .wp-block-gallery .blocks-gallery-image figure, .wp-block-gallery .blocks-gallery-item figure {
+    align-items: center;
+
+}
+
+.blocks-gallery-grid.is-cropped .blocks-gallery-image a, .blocks-gallery-grid.is-cropped .blocks-gallery-image img, .blocks-gallery-grid.is-cropped .blocks-gallery-item a, .blocks-gallery-grid.is-cropped .blocks-gallery-item img, .wp-block-gallery.is-cropped .blocks-gallery-image a, .wp-block-gallery.is-cropped .blocks-gallery-image img, .wp-block-gallery.is-cropped .blocks-gallery-item a, .wp-block-gallery.is-cropped .blocks-gallery-item img{
+    height:60%;
+}
+
+.blocks-gallery-grid .blocks-gallery-image figcaption, .blocks-gallery-grid .blocks-gallery-item figcaption, .wp-block-gallery .blocks-gallery-image figcaption, .wp-block-gallery .blocks-gallery-item figcaption {
+    background: transparent;
+}
+
+
 /* styling for footer */
 .footerLinks{
     background-color: #09090B;
