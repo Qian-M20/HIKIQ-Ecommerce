@@ -2,9 +2,9 @@
 register_block_style(
 	'core/quote',
 	array(
-		'name'         => 'red-quote',
-		'label'        => esc_html__( 'Red Quote', 'ecommerce-theme' ),
-		'inline_style' => '.wp-block-quote.is-style-red-quote { background-color: red; }',
+		'name'         => 'contact-quote',
+		'label'        => esc_html__( 'Contact Quote', 'ecommerce-theme' ),
+		'inline_style' => '.wp-block-quote.is-style-contact-quote { background-color: #c11e1c; color:white; font-family:futura; font-size:2em; padding:5px; }',
 	)
 );
 

@@ -117,6 +117,15 @@ input.search-submit {
     object-fit: contain;
 }
 
+/* styling for contact quote */
+.wp-block-quote.is-style-contact-quote p {
+    margin:2px 20px;
+}
+
+.wp-block-quote.is-style-contact-quote p:last-child {
+    font-size:0.8em;
+} 
+
 
 /* styling for footer */
 .footerLinks{
