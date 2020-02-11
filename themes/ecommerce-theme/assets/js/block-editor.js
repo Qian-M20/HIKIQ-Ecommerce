@@ -32,3 +32,12 @@ wp.domReady( function() {
         label: 'Promo Button',
     } );
 } );
+
+
+
+wp.domReady( function() {
+    wp.blocks.registerBlockStyle( 'core/image', {
+        name: 'about-poster',
+        label: 'About Poster',
+    } );
+} );

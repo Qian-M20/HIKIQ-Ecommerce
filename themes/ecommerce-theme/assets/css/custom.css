@@ -175,3 +175,8 @@ input.search-submit {
     font-family: futura;
 
 }
+
+/* about page */
+.wp-block-image.size-large.is-style-about-poster{
+    margin:0;
+}
