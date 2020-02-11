@@ -1,5 +1,13 @@
-/* styling for header */
-
+/******************************* styling for header ***********************************/
+header.site-header {
+    background: #f6f6f6;
+    height:17vh;
+    position:fixed;
+    z-index: 10001;
+    margin-top: -17vh;
+    width:100%;
+    margin-left:0
+}
 .site-branding img {
     width:100%;
 }
@@ -20,9 +28,15 @@ ul#primary-menu li {
 ul#primary-menu li a{
     text-decoration: none;
     font-size:1.5em;
-    color:#A9A9A9;
+    color:black;
+    font-family: futura;
 }
 
+a.custom-logo-link {
+    display:flex;
+    height:100%;
+    align-items: center;
+}
 /* search form styling */
 .widget-area {
     height:100%;
@@ -39,17 +53,66 @@ input.search-field {
     padding:5px;
     border-radius:0.5rem;
     font-size: 1.2em;
+    width:60%;
 }
 
 input.search-submit {
-    padding:5px;
+    padding:0.5vw;
     font-size:1.2em;
     font-family:Arial, Helvetica, sans-serif;
+    width:30%;
+    border-radius: 1.2rem;
 }
 
+/******************************** styling main page content ********************************/
+#primary {
+    margin-top:17vh;
+}
 
-/* .main-navigation {
+/* styling for the homepage */
+
+
+/* styling for footer */
+.footerLinks{
+    background-color: #09090B;
+}
+
+.menu-social-menu-container, .menu-footer-menu-container {
     display:flex;
-    align-items: center;
+    justify-content: center;
+    width:100%;
+}
+
+.menu-social-menu-container .menu {
+    width:50%;
+    display:flex;
     justify-content: space-around;
-} */
+}
+
+.menu-footer-menu-container .menu {
+    width:35%;
+    display:flex;
+    justify-content: space-around;
+}
+
+.menu a {
+    text-decoration: none;
+    font-size:1.5em;
+    color:white;
+    font-family: futura;
+}
+
+.site-info {
+    background-color: #f10205;
+    padding:5px;
+    display:flex;
+    justify-content: center;
+}
+
+.site-info a, .site-info span {
+    text-decoration: none;
+    color:#0a0a0a;
+    margin-right:10px;
+    font-family: futura;
+
+}
