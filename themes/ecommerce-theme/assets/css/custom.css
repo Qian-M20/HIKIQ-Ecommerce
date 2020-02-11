@@ -1,5 +1,13 @@
-/* styling for header */
-
+/******************************* styling for header ***********************************/
+header.site-header {
+    background: #f6f6f6;
+    height:17vh;
+    position:fixed;
+    z-index: 10001;
+    margin-top: -17vh;
+    width:100%;
+    margin-left:0
+}
 .site-branding img {
     width:100%;
 }
@@ -20,9 +28,15 @@ ul#primary-menu li {
 ul#primary-menu li a{
     text-decoration: none;
     font-size:1.5em;
-    color:#A9A9A9;
+    color:black;
+    font-family: futura;
 }
 
+a.custom-logo-link {
+    display:flex;
+    height:100%;
+    align-items: center;
+}
 /* search form styling */
 .widget-area {
     height:100%;
@@ -39,17 +53,125 @@ input.search-field {
     padding:5px;
     border-radius:0.5rem;
     font-size: 1.2em;
+    width:60%;
 }
 
 input.search-submit {
-    padding:5px;
+    padding:0.5vw;
     font-size:1.2em;
     font-family:Arial, Helvetica, sans-serif;
+    width:30%;
+    border-radius: 1.2rem;
+}
+
+/******************************** styling main page content ********************************/
+#primary {
+    margin-top:17vh;
+}
+
+/* styling for the homepage */
+
+
+/* style for the gallery */
+.is-style-red-gallery {
+    /* height:50vh; */
+    width:80%;
+    margin-left:auto;
+    margin-right:auto;
 }
 
 
-/* .main-navigation {
+.is-style-red-gallery figcaption.blocks-gallery-item__caption {
+    font-size:1.5em;
+    font-family: futura;
+    text-align: center;
+}
+.is-style-red-gallery ul li {
     display:flex;
     align-items: center;
+    background-color: #f10205;
+    height:40vh;
+}
+
+.is-style-red-gallery ul li figure{
+    width:100%;
+    display:flex;
+    align-items: center;
+}
+
+
+.blocks-gallery-grid .blocks-gallery-image figure, .blocks-gallery-grid .blocks-gallery-item figure, .wp-block-gallery .blocks-gallery-image figure, .wp-block-gallery .blocks-gallery-item figure {
+    align-items: center;
+
+}
+
+.blocks-gallery-grid.is-cropped .blocks-gallery-image a, .blocks-gallery-grid.is-cropped .blocks-gallery-image img, .blocks-gallery-grid.is-cropped .blocks-gallery-item a, .blocks-gallery-grid.is-cropped .blocks-gallery-item img, .wp-block-gallery.is-cropped .blocks-gallery-image a, .wp-block-gallery.is-cropped .blocks-gallery-image img, .wp-block-gallery.is-cropped .blocks-gallery-item a, .wp-block-gallery.is-cropped .blocks-gallery-item img{
+    height:35%;
+}
+
+.blocks-gallery-grid .blocks-gallery-image figcaption, .blocks-gallery-grid .blocks-gallery-item figcaption, .wp-block-gallery .blocks-gallery-image figcaption, .wp-block-gallery .blocks-gallery-item figcaption {
+    background: transparent;
+}
+
+.blocks-gallery-grid.is-cropped .blocks-gallery-image a, .blocks-gallery-grid.is-cropped .blocks-gallery-image img, .blocks-gallery-grid.is-cropped .blocks-gallery-item a, .blocks-gallery-grid.is-cropped .blocks-gallery-item img, .wp-block-gallery.is-cropped .blocks-gallery-image a, .wp-block-gallery.is-cropped .blocks-gallery-image img, .wp-block-gallery.is-cropped .blocks-gallery-item a, .wp-block-gallery.is-cropped .blocks-gallery-item img {
+    object-fit: contain;
+}
+
+/* styling for contact quote */
+.wp-block-quote.is-style-contact-quote p {
+    margin:2px 20px;
+}
+
+.wp-block-quote.is-style-contact-quote p:last-child {
+    font-size:0.8em;
+} 
+
+/* styling for button */
+.wp-block-button.is-style-promo-button a {
+    font-family: futura; box-shadow: 10px 10px 8px #888888; 
+}
+
+/* styling for footer */
+.footerLinks{
+    background-color: #09090B;
+}
+
+.menu-social-menu-container, .menu-footer-menu-container {
+    display:flex;
+    justify-content: center;
+    width:100%;
+}
+
+.menu-social-menu-container .menu {
+    width:50%;
+    display:flex;
     justify-content: space-around;
-} */
+}
+
+.menu-footer-menu-container .menu {
+    width:35%;
+    display:flex;
+    justify-content: space-around;
+}
+
+.menu a {
+    text-decoration: none;
+    font-size:1.5em;
+    color:white;
+    font-family: futura;
+}
+
+.site-info {
+    background-color: #f10205;
+    padding:5px;
+    display:flex;
+    justify-content: center;
+}
+
+.site-info a, .site-info span {
+    text-decoration: none;
+    color:#0a0a0a;
+    margin-right:10px;
+    font-family: futura;
+
+}

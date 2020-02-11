@@ -43,13 +43,15 @@ if ( ! function_exists( 'ecommerce_theme_setup' ) ) :
 		 * @link https://developer.wordpress.org/themes/functionality/featured-images-post-thumbnails/
 		 */
 		add_theme_support( 'post-thumbnails' );
-
-		// This theme uses wp_nav_menu() in one location.
-		register_nav_menus( array(
-			'menu-1' => esc_html__( 'Primary', 'ecommerce-theme' ),
-		) );
 		
-		
+		// This theme uses wp_nav_menu() in three locations.
+		register_nav_menus(
+			array(
+				'menu-1' => __( 'Primary', 'ecommerce-theme' ),
+				'footer' => __( 'Footer Menu', 'ecommerce-theme' ),
+				'social' => __( 'Social Links Menu', 'ecommerce-theme' ),
+			)
+		);
 		/*
 		 * Switch default core markup for search form, comment form, and comments
 		 * to output valid HTML5.
