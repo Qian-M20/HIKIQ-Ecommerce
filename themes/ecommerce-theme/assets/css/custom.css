@@ -184,6 +184,7 @@ input.search-submit {
 
 .wp-block-image img {
     width:100%;
+    padding: 30px;
     background-position: center;
     background-size: cover;
 }
