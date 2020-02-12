@@ -32,3 +32,40 @@ wp.domReady( function() {
         label: 'Promo Button',
     } );
 } );
+
+
+
+wp.domReady( function() {
+    wp.blocks.registerBlockStyle( 'core/image', {
+        name: 'about-poster',
+        label: 'About Poster',
+    } );
+} );
+
+wp.domReady( function() {
+    wp.blocks.registerBlockStyle( 'core/paragraph', {
+        name: 'red-div',
+        label: 'Red Div',
+    } );
+} );
+
+wp.domReady( function() {
+    wp.blocks.registerBlockStyle( 'core/heading', {
+        name: 'aboutUs-header',
+        label: 'About Us Header',
+    } );
+} );
+
+wp.domReady( function() {
+    wp.blocks.registerBlockStyle( 'core/paragraph', {
+        name: 'newsletter-ad',
+        label: 'Newsletter Ad',
+    } );
+} );
+
+wp.domReady( function() {
+    wp.blocks.registerBlockStyle( 'core/quote', {
+        name: 'about-quote',
+        label: 'About Quote',
+    } );
+} );

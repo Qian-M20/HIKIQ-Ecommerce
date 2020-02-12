@@ -175,3 +175,46 @@ input.search-submit {
     font-family: futura;
 
 }
+
+/* about page */
+.wp-block-image.size-large.is-style-about-poster{
+    margin:0;
+    
+}
+
+.wp-block-image img {
+    width:100%;
+    padding: 30px;
+    background-position: center;
+    background-size: cover;
+}
+
+/* Red div */
+.is-style-red-div {
+    width: 100%;
+    height: 710px;
+    background: #c11e1c;
+    font-size: 30px;
+    font-weight: bolder;
+}
+
+.has-text-color.has-background.has-huge-font-size.has-black-blue-color.has-dark-cyan-background-color{
+    margin: 0;
+    text-align: left;
+    font-size: 50px;
+}
+
+.wp-block-button__link.has-text-color.has-black-blue-color.has-background.has-white-background-color{
+    transition: all .3s ease;
+}
+
+.wp-block-button__link.has-text-color.has-black-blue-color.has-background.has-white-background-color:hover{
+    background: black;
+    color: white;
+}
+
+.wp-block-quote.is-style-about-quote p{
+    font-family: 'Gill Sans', sans-serif;
+    font-size: 27px;
+    margin: 10px 100px;
+}
