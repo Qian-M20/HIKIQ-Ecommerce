@@ -34,8 +34,10 @@
 			<?php the_custom_logo();?>
 		</div><!-- .site-branding -->
 
+<<<<<<< HEAD
 
 		<nav id="site-navigation" class="main-navigation cell large-8 medium-8 grid-x align-middle">
+
 			<!-- <button class="menu-toggle" aria-controls="primary-menu" aria-expanded="false"><?php esc_html_e( 'Primary Menu', 'ecommerce-theme' ); ?></button> -->
 			<?php
 			wp_nav_menu( array(
