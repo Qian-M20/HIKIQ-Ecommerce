@@ -136,22 +136,22 @@ if ( ! function_exists( 'ecommerce_theme_setup' ) ) :
 
 		add_theme_support( 'editor-font-sizes', array(
 			array(
-				'name' => __( 'Small', 'themeLangDomain' ),
+				'name' => __( 'Small', 'ecommerce-themeLangDomain' ),
 				'size' => 16,
 				'slug' => 'small'
 			),
 			array(
-				'name' => __( 'Regular', 'themeLangDomain' ),
+				'name' => __( 'Regular', 'ecommerce-themeLangDomain' ),
 				'size' => 22,
 				'slug' => 'regular'
 			),
 			array(
-				'name' => __( 'Large', 'themeLangDomain' ),
+				'name' => __( 'Large', 'ecommerce-themeLangDomain' ),
 				'size' => 36,
 				'slug' => 'large'
 			),
 			array(
-				'name' => __( 'Huge', 'themeLangDomain' ),
+				'name' => __( 'Huge', 'ecommerce-themeLangDomain' ),
 				'size' => 50,
 				'slug' => 'huge'
 			)
@@ -243,6 +243,13 @@ function ecommerce_theme_scripts() {
 	wp_enqueue_style(
 		'custom-style',
 		get_stylesheet_directory_uri() . '/assets/css/custom.css',
+		array()
+	);
+
+	// Enqueue shop page style ********************************************
+	wp_enqueue_style(
+		'shop-style',
+		get_stylesheet_directory_uri() . '/assets/css/shop.css',
 		array()
 	);
 
