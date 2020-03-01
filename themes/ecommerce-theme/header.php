@@ -29,14 +29,14 @@
 
 	<header id="masthead" class="site-header grid-x grid-margin-x">
 		
-		<div class="cell large-1 medium-1"></div>
-		<div class="site-branding cell large-2 medium-2">
+		<div class="cell large-1 medium-1 small-1"></div>
+		<input type="checkbox" id="toggle">
+        <label for="toggle" class="hamburger small-2" >&#9776;</label>
+		<div class="site-branding cell large-2 medium-3 small-8">
 			<?php the_custom_logo();?>
 		</div><!-- .site-branding -->
 
-<<<<<<< HEAD
-
-		<nav id="site-navigation" class="main-navigation cell large-8 medium-8 grid-x align-middle">
+		<nav id="site-navigation" class="main-navigation cell large-8 medium-7 grid-x align-middle">
 
 			<!-- <button class="menu-toggle" aria-controls="primary-menu" aria-expanded="false"><?php esc_html_e( 'Primary Menu', 'ecommerce-theme' ); ?></button> -->
 			<?php
@@ -57,7 +57,7 @@
 			</div>
 		</div> -->
 
-		<div class="cell large-1 medium-1"></div>
+		<div class="cell large-1 medium-1 small-1"></div>
 
 
 		

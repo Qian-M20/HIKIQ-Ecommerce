@@ -6,17 +6,17 @@ body {
 header.site-header {
     background: rgba(255,255,255,.8);
     /* background:transparent; */
-    /* height:17vh; */
-    /* position:fixed; */
+    height:10vh;
+    position:fixed;
     z-index: 10001;
-    /* margin-top: -17vh; */
+    margin-top: -10vh;
     width:100%;
     margin-left:0;
-    display:flex;
-    align-items: center;
+    /* display:grid; */
+    align-content: center;
 }
 .site-branding img {
-    width:100%;
+    width:60%;
 }
 
 .menu-primary-menu-container {
@@ -34,7 +34,7 @@ ul#primary-menu li {
 
 ul#primary-menu li a{
     text-decoration: none;
-    font-size:2vw;
+    font-size:1.2em;
     color:black;
     font-family: futura;
     margin-right:2vw;
@@ -48,6 +48,7 @@ a.custom-logo-link {
     display:flex;
     height:100%;
     align-items: center;
+    justify-content: center;
 }
 /* widget styling */
 .widget-area {
@@ -85,10 +86,59 @@ input.search-submit {
     border-radius: 0.8rem;
 }
 
+header label, header input {
+    display:none;
+}
+
+/******************************** styling hamburger menu ********************************/
+@media screen and (max-width: 39.9375em) {
+    /* header.site-header{
+        height:auto;
+    } */
+
+    ul#primary-menu {
+        display:none;
+    }
+
+    /* ul#primary-menu li{
+        display:none;
+        background-color: white;
+    } */
+
+    .site-branding img {
+        width:40%;
+    }
+    
+    header label {
+        font-size:2em;
+        display:block
+    }
+
+    #toggle:checked ~ nav ul#primary-menu {
+        /* transform: scale(1); */
+        display:block;
+        opacity:1;
+        height:20vh;
+        transition: opacity 500ms ease-in-out;  
+        position: absolute;
+        margin-top:0;
+        padding-left:2em;
+        background-color: white;
+        width:100%;
+    }
+
+    #toggle:checked ~ nav {
+        /* transform: scale(1); */
+        margin-left:0;
+    }
+}
+
+
+
 /******************************** styling main page content ********************************/
-/* #primary {
-    margin-top:17vh;
-} */
+#primary {
+    margin-top:10vh;
+}
 
 /* styling for the homepage */
 
