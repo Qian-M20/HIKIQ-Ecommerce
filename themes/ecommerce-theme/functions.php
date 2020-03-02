@@ -262,6 +262,13 @@ function ecommerce_theme_scripts() {
 		array()
 	);
 
+	// Enqueue sidebar style ********************************************
+	wp_enqueue_style(
+		'sidebar-style',
+		get_stylesheet_directory_uri() . '/assets/css/sidebar.css',
+		array()
+	);
+
 	// Enqueue shop page style ********************************************
 	wp_enqueue_style(
 		'shop-style',

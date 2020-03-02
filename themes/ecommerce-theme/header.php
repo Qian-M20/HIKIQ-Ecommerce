@@ -29,7 +29,7 @@
 
 	<header id="masthead" class="site-header grid-x grid-margin-x">
 		
-		<div class="cell large-1 medium-1 small-1"></div>
+		<!-- <div class="cell large-1 medium-1 small-1"></div> -->
 		<input type="checkbox" id="toggle">
         <label for="toggle" class="hamburger small-2" >&#9776;</label>
 		<div class="site-branding cell large-2 medium-3 small-8">
@@ -46,7 +46,8 @@
 			) );
 			?>
 		</nav><!-- #site-navigation -->
-		<div class="cell searchBar large-3 medium-3 small-12">
+		<div class="cell searchBar large-5 medium-5 small-12">
+				
 			<?php
 			
 			if ( is_active_sidebar( 'custom-header-widget' ) ) : ?>
@@ -58,7 +59,7 @@
 
 		</div>
 
-		<div class="cell large-1 medium-1 small-1"></div>
+		<!-- <div class="cell large-1 medium-1 small-1"></div> -->
 
 
 		
