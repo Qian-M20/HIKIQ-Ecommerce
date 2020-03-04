@@ -47,9 +47,9 @@ if ( ! function_exists( 'ecommerce_theme_setup' ) ) :
 		// This theme uses wp_nav_menu() in three locations.
 		register_nav_menus(
 			array(
-				'menu-1' => __( 'Primary', 'ecommerce-theme' ),
-				'footer' => __( 'Footer Menu', 'ecommerce-theme' ),
-				'social' => __( 'Social Links Menu', 'ecommerce-theme' ),
+				'menu-1' => esc_html__( 'Primary', 'ecommerce-theme' ),
+				'footer' => esc_html__( 'Footer Menu', 'ecommerce-theme' ),
+				'social' => esc_html__( 'Social Links Menu', 'ecommerce-theme' ),
 			)
 		);
 		/*
