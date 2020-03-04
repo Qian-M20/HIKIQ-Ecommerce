@@ -3096,8 +3096,8 @@ a.wsf-button {
   input[type="submit"].wsf-button.wsf-button-primary,
   input[type="reset"].wsf-button.wsf-button-primary,
   a.wsf-button.wsf-button-primary {
-    background-color: #0ba987;
-    border-color: #0ba987;
+    background-color: #0ba987 !important;
+    border-color: #0ba987 !important;
     color: #FFFFFF; }
     button.wsf-button.wsf-button-primary svg path,
     input[type="button"].wsf-button.wsf-button-primary svg path,
@@ -3110,16 +3110,16 @@ a.wsf-button {
     input[type="submit"].wsf-button.wsf-button-primary:hover,
     input[type="reset"].wsf-button.wsf-button-primary:hover,
     a.wsf-button.wsf-button-primary:hover {
-      background-color: #00152c;
-      border-color: #00152c;
+      background-color: #0ba987 !important;
+      border-color: #0ba987 !important;
       color: #FFFFFF; }
       button.wsf-button.wsf-button-primary:hover:disabled,
       input[type="button"].wsf-button.wsf-button-primary:hover:disabled,
       input[type="submit"].wsf-button.wsf-button-primary:hover:disabled,
       input[type="reset"].wsf-button.wsf-button-primary:hover:disabled,
       a.wsf-button.wsf-button-primary:hover:disabled {
-        background-color: #002E5F;
-        border-color: #002E5F; }
+        background-color: #0ba987 !important;
+        border-color: #0ba987 !important; }
     button.wsf-button.wsf-button-primary:focus, button.wsf-button.wsf-button-primary:active,
     input[type="button"].wsf-button.wsf-button-primary:focus,
     input[type="button"].wsf-button.wsf-button-primary:active,
@@ -3141,8 +3141,8 @@ a.wsf-button {
       input[type="reset"].wsf-button.wsf-button-primary:active:disabled,
       a.wsf-button.wsf-button-primary:focus:disabled,
       a.wsf-button.wsf-button-primary:active:disabled {
-        background-color: #002E5F;
-        border-color: #002E5F; }
+        background-color: #0ba987 !important;
+        border-color: #0ba987 !important; }
   button.wsf-button.wsf-button-secondary,
   input[type="button"].wsf-button.wsf-button-secondary,
   input[type="submit"].wsf-button.wsf-button-secondary,
