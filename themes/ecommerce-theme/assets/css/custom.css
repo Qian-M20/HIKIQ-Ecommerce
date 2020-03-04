@@ -261,6 +261,12 @@ header .hamburger, header #toggle {
     margin: 0;
     text-align: left;
     font-size: 50px;
+    color: #0ba987;
+
+}
+p.has-text-color a {
+    color: #0ba987;
+    /* background-color: green; */
 }
 
 .wp-block-button__link.has-text-color.has-black-blue-color.has-background.has-white-background-color{
