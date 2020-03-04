@@ -1,15 +1,26 @@
+/*******************************  styling for body *******************************/
+body {
+    background:transparent;
+}
+.content-area.grid-container {
+    padding-left:0;
+    padding-right:0;
+}
 /******************************* styling for header ***********************************/
 header.site-header {
-    background: #f6f6f6;
-    height:17vh;
+    background: rgba(235,237,238,.8);
+    /* background:transparent; */
+    height:10vh;
     position:fixed;
     z-index: 10001;
-    margin-top: -17vh;
+    margin-top: -10vh;
     width:100%;
-    margin-left:0
+    margin-left:0;
+    display:flex;
+    align-items: center;
 }
 .site-branding img {
-    width:100%;
+    width:60%;
 }
 
 .menu-primary-menu-container {
@@ -18,7 +29,7 @@ header.site-header {
 
 ul#primary-menu {
     display:flex;
-    justify-content: space-around;
+    justify-content: flex-end;
 }
 
 ul#primary-menu li {
@@ -27,46 +38,89 @@ ul#primary-menu li {
 
 ul#primary-menu li a{
     text-decoration: none;
-    font-size:1.5em;
+    font-size:1.2em;
     color:black;
     font-family: futura;
+    margin-right:2vw;
+}
+
+ul#primary-menu li a:hover{
+   color: #c11e1c;
 }
 
 a.custom-logo-link {
     display:flex;
     height:100%;
     align-items: center;
+    justify-content: center;
 }
-/* search form styling */
-.widget-area {
-    height:100%;
-    display:flex;
-    align-items: center;
-}
-.search-form span {
+
+header .hamburger, header #toggle {
     display:none;
 }
 
-input.search-field {
-    float:left;
-    margin-right:2px;
-    padding:5px;
-    border-radius:0.5rem;
-    font-size: 1.2em;
-    width:60%;
+.cell.searchBar.large-3.medium-3.small-12 {
+    display:flex;
+    align-items: center;
 }
 
-input.search-submit {
-    padding:0.5vw;
-    font-size:1.2em;
-    font-family:Arial, Helvetica, sans-serif;
-    width:30%;
-    border-radius: 1.2rem;
+/******************************** styling hamburger menu ********************************/
+@media screen and (max-width: 39.9375em) {
+    /* header.site-header{
+        height:auto;
+    } */
+    .cell.searchBar.large-5.medium-5.small-12 {
+        display:none;
+    }
+
+    ul#primary-menu {
+        display:none;
+    }
+
+    /* ul#primary-menu li{
+        display:none;
+        background-color: white;
+    } */
+
+    .site-branding img {
+        width:40%;
+    }
+    
+    header .hamburger {
+        font-size:2em;
+        display:block;
+        margin-left:1em;
+
+    }
+
+    #toggle:checked ~ nav ul#primary-menu {
+        /* transform: scale(1); */
+        display:block;
+        opacity:1;
+        /* height:20vh; */
+        transition: opacity 500ms ease-in-out;  
+        position: absolute;
+        margin-top:0;
+        padding-left:2em;
+        background: rgba(235,237,238,.8);
+        width:100%;
+        padding-bottom:1em;
+    }
+
+    #toggle:checked ~ nav {
+        transform: scale(1);
+        width:100%;
+        margin-left:0;
+        
+        /* height:auto; */
+    }
 }
+
+
 
 /******************************** styling main page content ********************************/
 #primary {
-    margin-top:17vh;
+    margin-top:10vh;
 }
 
 /* styling for the homepage */
@@ -136,6 +190,9 @@ input.search-submit {
     background-color: #09090B;
 }
 
+.footerLinks.grid-x.grid-margin-x {
+    width:100%;
+}
 .menu-social-menu-container, .menu-footer-menu-container {
     display:flex;
     justify-content: center;
@@ -176,6 +233,8 @@ input.search-submit {
 
 }
 
+
+/********************************************** changes by Harkaran and Karan*********************************************/
 /* about page */
 .wp-block-image.size-large.is-style-about-poster{
     margin:0;
@@ -202,6 +261,12 @@ input.search-submit {
     margin: 0;
     text-align: left;
     font-size: 50px;
+    color: #0ba987;
+
+}
+p.has-text-color a {
+    color: #0ba987;
+    /* background-color: green; */
 }
 
 .wp-block-button__link.has-text-color.has-black-blue-color.has-background.has-white-background-color{

@@ -24,6 +24,44 @@ function ecommerce_theme_customize_register( $wp_customize ) {
 			'render_callback' => 'ecommerce_theme_customize_partial_blogdescription',
 		) );
 	}
+
+	/**
+	 * PANELS
+	 */
+	$wp_customize->add_panel('ecommerce_theme_social_media_panel', array(
+		'title' => esc_html__('Social Media', 'ecommerce_theme'),
+		'capability' => 'edit_theme_options',
+	));
+	/**
+	 * SECTIONS
+	 */
+	$wp_customize->add_section('ecommerce_theme_facebook_section', array(
+		'title' => esc_html__('Facebook', 'ecommerce_theme'),
+		'capability' => 'edit_theme_options',
+		'panel' => 'ecommerce_theme_social_media_panel',
+	));
+
+	/**
+	 * SETTINGS
+	 */
+	$wp_customize->add_setting('ecommerce_theme_facebook_url', array(
+		'transport' => 'refresh', 
+		'default' => '',
+		'sanitize_callback' =>  'esc_url_raw',
+	));
+
+	/**
+	 * CONTROLS (has the same name as setting)
+	 */
+	$wp_customize->add_control('ecommerce_theme_facebook_url', array(
+		'label' => esc_html__('URL', 'ecommerce_theme'),
+		'description' => esc_html__('Add URL to display Facebook icon/link','ecommerce_theme' ),
+		'section' => 'ecommerce_theme_facebook_section',
+		'type' => 'input',
+		'input_attrs' => array(
+			'placeholder' => esc_html__('http://facebook.com','ecommerce_theme' ),
+		),
+	));
 }
 add_action( 'customize_register', 'ecommerce_theme_customize_register' );
 

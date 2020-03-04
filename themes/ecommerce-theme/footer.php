@@ -48,6 +48,14 @@
 				?>
 		</div><!-- .site-info -->
 	</footer><!-- #colophon -->
+	
+	<?php if(get_theme_mod('ecommerce_theme_facebook_url') ||  get_theme_mod('ecommerce_theme_twitter_url') ){?> 
+		<ul class="social-media">
+			<?php if(get_theme_mod('ecommerce_theme_facebook_url')) {?> 
+				<li class="facebook"><a href="<?php echo get_theme_mod('ecommerce_theme_facebook_url')?>"><img src="<?php echo get_template_directory_uri() .'/assets/img/facebook-icon.jpg'?>" alt="<?php echo esc_html__('Facebook','ecommerce_theme'); ?>"></a></li>
+			<?php } ?>
+		</ul>
+	<?php } ?>
 </div><!-- #page -->
 
 <?php wp_footer(); ?>

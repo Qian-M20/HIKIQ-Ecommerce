@@ -1,0 +1,32 @@
+ul.products.columns-4 {
+    padding:2vw;
+}
+
+.woocommerce.columns-4 {
+    padding:2em;
+}
+
+
+h2.woocommerce-loop-product__title {
+    color: #252525;
+    text-align: center;
+    height:10vh;
+}
+
+.woocommerce ul.products li.product .price {
+    color:#c11e1c;
+    text-align: center;
+}
+
+.woocommerce span.onsale {
+    background-color: #c11e1c;
+}
+
+.woocommerce #respond input#submit, .woocommerce a.button, .woocommerce button.button, .woocommerce input.button {
+    background-color: #0ba987;
+    color:white;
+    margin:0 auto;
+    width:100%;
+    text-align: center;
+}
+

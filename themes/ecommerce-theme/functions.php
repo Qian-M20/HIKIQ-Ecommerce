@@ -47,9 +47,9 @@ if ( ! function_exists( 'ecommerce_theme_setup' ) ) :
 		// This theme uses wp_nav_menu() in three locations.
 		register_nav_menus(
 			array(
-				'menu-1' => __( 'Primary', 'ecommerce-theme' ),
-				'footer' => __( 'Footer Menu', 'ecommerce-theme' ),
-				'social' => __( 'Social Links Menu', 'ecommerce-theme' ),
+				'menu-1' => esc_html__( 'Primary', 'ecommerce-theme' ),
+				'footer' => esc_html__( 'Footer Menu', 'ecommerce-theme' ),
+				'social' => esc_html__( 'Social Links Menu', 'ecommerce-theme' ),
 			)
 		);
 		/*
@@ -136,22 +136,22 @@ if ( ! function_exists( 'ecommerce_theme_setup' ) ) :
 
 		add_theme_support( 'editor-font-sizes', array(
 			array(
-				'name' => __( 'Small', 'themeLangDomain' ),
+				'name' => __( 'Small', 'ecommerce-themeLangDomain' ),
 				'size' => 16,
 				'slug' => 'small'
 			),
 			array(
-				'name' => __( 'Regular', 'themeLangDomain' ),
+				'name' => __( 'Regular', 'ecommerce-themeLangDomain' ),
 				'size' => 22,
 				'slug' => 'regular'
 			),
 			array(
-				'name' => __( 'Large', 'themeLangDomain' ),
+				'name' => __( 'Large', 'ecommerce-themeLangDomain' ),
 				'size' => 36,
 				'slug' => 'large'
 			),
 			array(
-				'name' => __( 'Huge', 'themeLangDomain' ),
+				'name' => __( 'Huge', 'ecommerce-themeLangDomain' ),
 				'size' => 50,
 				'slug' => 'huge'
 			)
@@ -224,6 +224,22 @@ function ecommerce_theme_widgets_init() {
 }
 add_action( 'widgets_init', 'ecommerce_theme_widgets_init' );
 
+// add custom widget area in the header
+function wpb_widgets_init() {
+
+    register_sidebar( array(
+        'name'          => 'Custom Header Widget Area',
+        'id'            => 'custom-header-widget',
+        'before_widget' => '<div class="chw-widget">',
+        'after_widget'  => '</div>',
+        'before_title'  => '<h2 class="chw-title">',
+        'after_title'   => '</h2>',
+    ) );
+
+}
+
+add_action( 'widgets_init', 'wpb_widgets_init' );
+
 /**
  * Enqueue scripts and styles.
  */
@@ -243,6 +259,20 @@ function ecommerce_theme_scripts() {
 	wp_enqueue_style(
 		'custom-style',
 		get_stylesheet_directory_uri() . '/assets/css/custom.css',
+		array()
+	);
+
+	// Enqueue sidebar style ********************************************
+	wp_enqueue_style(
+		'sidebar-style',
+		get_stylesheet_directory_uri() . '/assets/css/sidebar.css',
+		array()
+	);
+
+	// Enqueue shop page style ********************************************
+	wp_enqueue_style(
+		'shop-style',
+		get_stylesheet_directory_uri() . '/assets/css/shop.css',
 		array()
 	);
 
