@@ -192,6 +192,7 @@ header .hamburger, header #toggle {
 
 .footerLinks.grid-x.grid-margin-x {
     width:100%;
+    margin-left:0;
 }
 .menu-social-menu-container, .menu-footer-menu-container {
     display:flex;
@@ -206,9 +207,16 @@ header .hamburger, header #toggle {
 }
 
 .menu-footer-menu-container .menu {
-    width:35%;
+    widows: 30%;
     display:flex;
-    justify-content: space-around;
+    justify-content: center;
+    padding-left:0;
+}
+
+.menu-footer-menu-container .menu li{
+    display:block;
+    margin-left:1em;
+    margin-right:1em;
 }
 
 .menu a {
@@ -222,15 +230,46 @@ header .hamburger, header #toggle {
     background-color: #f10205;
     padding:5px;
     display:flex;
+    flex-direction:column;
     justify-content: center;
+    color: #0a0a0a;
+    margin-right: 10px;
+    font-family: futura;
+    display: block;
+    width: 100%;
+    text-align: center;
+    padding:1em;
 }
 
-.site-info a, .site-info span {
+.site-info a {
     text-decoration: none;
     color:#0a0a0a;
     margin-right:10px;
     font-family: futura;
+    display:block;
+    width:100%;
+    text-align: center;
+    display:inline;
+}
+/* styling for social media links */
 
+
+ul.social-media {
+    width: 20%;
+    margin-left: auto;
+    margin-right: auto;
+    display: flex;
+    justify-content: space-evenly;
+    padding-left:0;
+}
+
+ul.social-media li {
+    list-style: none;
+}
+
+ul.social-media li a{
+    color:#0ba987;
+    font-size:2.5em;
 }
 
 

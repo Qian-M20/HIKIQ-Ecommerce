@@ -41,10 +41,48 @@ function ecommerce_theme_customize_register( $wp_customize ) {
 		'panel' => 'ecommerce_theme_social_media_panel',
 	));
 
+	$wp_customize->add_section('ecommerce_theme_twitter_section', array(
+		'title' => esc_html__('Twitter', 'ecommerce_theme'),
+		'capability' => 'edit_theme_options',
+		'panel' => 'ecommerce_theme_social_media_panel',
+	));
+
+
+	$wp_customize->add_section('ecommerce_theme_instagram_section', array(
+		'title' => esc_html__('Instagram', 'ecommerce_theme'),
+		'capability' => 'edit_theme_options',
+		'panel' => 'ecommerce_theme_social_media_panel',
+	));
+
+
+	$wp_customize->add_section('ecommerce_theme_pinterest_section', array(
+		'title' => esc_html__('Pinterest', 'ecommerce_theme'),
+		'capability' => 'edit_theme_options',
+		'panel' => 'ecommerce_theme_social_media_panel',
+	));
+
 	/**
 	 * SETTINGS
 	 */
 	$wp_customize->add_setting('ecommerce_theme_facebook_url', array(
+		'transport' => 'refresh', 
+		'default' => '',
+		'sanitize_callback' =>  'esc_url_raw',
+	));
+
+	$wp_customize->add_setting('ecommerce_theme_twitter_url', array(
+		'transport' => 'refresh', 
+		'default' => '',
+		'sanitize_callback' =>  'esc_url_raw',
+	));
+
+	$wp_customize->add_setting('ecommerce_theme_instagram_url', array(
+		'transport' => 'refresh', 
+		'default' => '',
+		'sanitize_callback' =>  'esc_url_raw',
+	));
+
+	$wp_customize->add_setting('ecommerce_theme_pinterest_url', array(
 		'transport' => 'refresh', 
 		'default' => '',
 		'sanitize_callback' =>  'esc_url_raw',
@@ -60,6 +98,36 @@ function ecommerce_theme_customize_register( $wp_customize ) {
 		'type' => 'input',
 		'input_attrs' => array(
 			'placeholder' => esc_html__('http://facebook.com','ecommerce_theme' ),
+		),
+	));
+
+	$wp_customize->add_control('ecommerce_theme_twitter_url', array(
+		'label' => esc_html__('URL', 'ecommerce_theme'),
+		'description' => esc_html__('Add URL to display Twitter icon/link','ecommerce_theme' ),
+		'section' => 'ecommerce_theme_twitter_section',
+		'type' => 'input',
+		'input_attrs' => array(
+			'placeholder' => esc_html__('http://twitter.com','ecommerce_theme' ),
+		),
+	));
+
+	$wp_customize->add_control('ecommerce_theme_instagram_url', array(
+		'label' => esc_html__('URL', 'ecommerce_theme'),
+		'description' => esc_html__('Add URL to display Instagram icon/link','ecommerce_theme' ),
+		'section' => 'ecommerce_theme_instagram_section',
+		'type' => 'input',
+		'input_attrs' => array(
+			'placeholder' => esc_html__('http://instagram.com','ecommerce_theme' ),
+		),
+	));
+
+	$wp_customize->add_control('ecommerce_theme_pinterest_url', array(
+		'label' => esc_html__('URL', 'ecommerce_theme'),
+		'description' => esc_html__('Add URL to display Pinterest icon/link','ecommerce_theme' ),
+		'section' => 'ecommerce_theme_pinterest_section',
+		'type' => 'input',
+		'input_attrs' => array(
+			'placeholder' => esc_html__('http://pinterest.com','ecommerce_theme' ),
 		),
 	));
 }
