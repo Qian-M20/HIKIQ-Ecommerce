@@ -192,6 +192,7 @@ header .hamburger, header #toggle {
 
 .footerLinks.grid-x.grid-margin-x {
     width:100%;
+    margin-left:0;
 }
 .menu-social-menu-container, .menu-footer-menu-container {
     display:flex;
@@ -231,6 +232,25 @@ header .hamburger, header #toggle {
     margin-right:10px;
     font-family: futura;
 
+}
+/* styling for social media links */
+
+
+ul.social-media {
+    width: 20%;
+    margin-left: auto;
+    margin-right: auto;
+    display: flex;
+    justify-content: space-evenly;
+}
+
+ul.social-media li {
+    list-style: none;
+}
+
+ul.social-media li a{
+    color:#0ba987;
+    font-size:2.5em;
 }
 
 

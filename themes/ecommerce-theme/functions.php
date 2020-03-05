@@ -249,7 +249,7 @@ function ecommerce_theme_scripts() {
 	// Enqueue foundation min style ********************************************
 
 	wp_enqueue_style( 
-		'sample-theme-foundation', 
+		'ecommerce-theme-foundation', 
 		get_template_directory_uri() .'/assets/css/vendor/foundation.min.css', 
 		null, 
 		'6.5.1' 
@@ -282,11 +282,20 @@ function ecommerce_theme_scripts() {
 	// Enqueue foundation min js
 	wp_enqueue_script ( 'sample-theme-foundation', get_template_directory_uri() .'/assets/js/vendor/foundation.min.js', array('jquery','ecommerce-theme-what-input'), '6.5.1', true);
 
+	
 	if ( is_singular() && comments_open() && get_option( 'thread_comments' ) ) {
 		wp_enqueue_script( 'comment-reply' );
 	}
 }
 add_action( 'wp_enqueue_scripts', 'ecommerce_theme_scripts' );
+
+
+/**
+ * Enqueue fontawesome
+ */
+wp_register_script( 'FontAwesome', 'https://use.fontawesome.com/releases/v5.8.2/js/all.js', null, null, true );
+wp_enqueue_script('FontAwesome');
+
 
 /**
  * Custom template tags for this theme.

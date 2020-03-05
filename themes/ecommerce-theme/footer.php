@@ -15,15 +15,49 @@
 
 	<footer id="colophon" class="site-footer">
 		<div class="footerLinks grid-x grid-margin-x">
-			<nav id="social-navigation" class="main-navigation cell large-12 medium-12 grid-x align-middle">
-					<!-- <button class="menu-toggle" aria-controls="primary-menu" aria-expanded="false"><?php esc_html_e( 'Primary Menu', 'ecommerce-theme' ); ?></button> -->
-					<?php
-					wp_nav_menu( array(
-						'theme_location' => 'social',
-						'menu_id'        => 'social-menu',
-					) );
-					?>
-			</nav><!-- #social-links-navigation -->
+			<nav id="social-navigation" class="social-navigation cell large-12 medium-12 grid-x align-middle">
+				<?php if(get_theme_mod('ecommerce_theme_facebook_url') ||  get_theme_mod('ecommerce_theme_twitter_url') ){?> 
+					<ul class="social-media">
+						<?php if(get_theme_mod('ecommerce_theme_facebook_url')) {?> 
+							<li class="facebook">
+								<a href="<?php echo get_theme_mod('ecommerce_theme_facebook_url')?>">
+									<i class="fab fa-facebook"></i>
+								</a>
+							</li>
+						<?php } ?>
+
+						<?php if(get_theme_mod('ecommerce_theme_twitter_url')) {?> 
+							<li class="twitter">
+								<a href="<?php echo get_theme_mod('ecommerce_theme_twitter_url')?>">
+									<i class="fab fa-twitter"></i>
+								</a>
+							</li>
+						<?php } ?>
+
+						<?php if(get_theme_mod('ecommerce_theme_instagram_url')) {?> 
+							<li class="instagram">
+								<a href="<?php echo get_theme_mod('ecommerce_theme_instagram_url')?>">
+									<i class="fab fa-instagram"></i>
+								</a>
+							</li>
+						<?php } ?>
+
+						<?php if(get_theme_mod('ecommerce_theme_pinterest_url')) {?> 
+							<li class="pinterest">
+								<a href="<?php echo get_theme_mod('ecommerce_theme_pinterest_url')?>">
+									<i class="fab fa-pinterest"></i>
+								</a>
+							</li>
+						<?php } ?>
+
+						
+					</ul>
+				<?php } ?>
+				
+			</nav><!-- #social-media-navigation -->
+
+			
+			<!-- #social-links-navigation -->
 			<nav id="footer-navigation" class="main-navigation cell large-12 medium-12 grid-x align-middle">
 					<!-- <button class="menu-toggle" aria-controls="primary-menu" aria-expanded="false"><?php esc_html_e( 'Primary Menu', 'ecommerce-theme' ); ?></button> -->
 					<?php
@@ -49,13 +83,7 @@
 		</div><!-- .site-info -->
 	</footer><!-- #colophon -->
 	
-	<?php if(get_theme_mod('ecommerce_theme_facebook_url') ||  get_theme_mod('ecommerce_theme_twitter_url') ){?> 
-		<ul class="social-media">
-			<?php if(get_theme_mod('ecommerce_theme_facebook_url')) {?> 
-				<li class="facebook"><a href="<?php echo get_theme_mod('ecommerce_theme_facebook_url')?>"><img src="<?php echo get_template_directory_uri() .'/assets/img/facebook-icon.jpg'?>" alt="<?php echo esc_html__('Facebook','ecommerce_theme'); ?>"></a></li>
-			<?php } ?>
-		</ul>
-	<?php } ?>
+
 </div><!-- #page -->
 
 <?php wp_footer(); ?>

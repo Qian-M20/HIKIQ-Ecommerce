@@ -1,6 +1,7 @@
 <?php
 /**
- * Template Name: Sidebar Right
+ * Template Name: blog
+ * 
  * 
  * The template for displaying sidebar on the right pages
  *
