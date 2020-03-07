@@ -29,7 +29,6 @@ get_header();
 				<?php
 			endif;
             ?>
-            <h1>this is for homepage testing</h1>
             <?php
 			/* Start the Loop */
 			while ( have_posts() ) :
@@ -57,5 +56,5 @@ get_header();
 	</div><!-- #primary -->
 
 <?php
-get_sidebar();
+// get_sidebar();
 get_footer();

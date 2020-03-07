@@ -36,7 +36,7 @@
 			<?php the_custom_logo();?>
 		</div><!-- .site-branding -->
 
-		<nav id="site-navigation" class="main-navigation cell large-5 medium-4 grid-x align-middle">
+		<nav id="site-navigation" class="main-navigation cell large-6 medium-6 grid-x align-middle">
 
 			<!-- <button class="menu-toggle" aria-controls="primary-menu" aria-expanded="false"><?php esc_html_e( 'Primary Menu', 'ecommerce-theme' ); ?></button> -->
 			<?php
@@ -46,7 +46,7 @@
 			) );
 			?>
 		</nav><!-- #site-navigation -->
-		<div class="cell searchBar large-5 medium-5 small-12">
+		<div class="cell searchBar large-4 medium-4 small-12">
 				
 			<?php
 			
