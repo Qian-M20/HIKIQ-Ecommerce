@@ -29,11 +29,20 @@ header.site-header {
 
 ul#primary-menu {
     display:flex;
-    justify-content: flex-end;
+    justify-content: center;
 }
 
 ul#primary-menu li {
     list-style: none;
+}
+
+.grid-margin-x>.cell {
+    margin-left:0;
+    margin-right:0;
+}
+
+header .widget-area {
+    padding:0;
 }
 
 ul#primary-menu li a{
