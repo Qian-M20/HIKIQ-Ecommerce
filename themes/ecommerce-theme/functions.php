@@ -276,6 +276,13 @@ function ecommerce_theme_scripts() {
 		array()
 	);
 
+	// Enqueue contact page style ********************************************
+	wp_enqueue_style(
+		'contact-style',
+		get_stylesheet_directory_uri() . '/assets/css/contact.css',
+		array()
+	);
+
 	// Enqueue what input js
 	wp_enqueue_script ( 'sample-theme-what-input', get_template_directory_uri() .'/assets/js/vendor/what-input.js', array('jquery'), '6.5.1', true);
 

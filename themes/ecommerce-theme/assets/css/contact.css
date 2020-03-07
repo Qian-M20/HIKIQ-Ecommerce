@@ -1,0 +1,14 @@
+p {
+    color:red;
+}
+
+.shoeBox{
+    /* background-image: url(../img/pic.png); */
+    width: 20px;
+    background-repeat: no-repeat;
+}
+
+h1{
+    color: blue;
+    font-size: 80px;
+}
