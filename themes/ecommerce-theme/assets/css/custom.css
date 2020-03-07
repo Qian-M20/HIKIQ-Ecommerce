@@ -86,6 +86,36 @@ header .hamburger, header #toggle {
     align-items: center;
 }
 
+/* styling for search bar */
+form.search-form {
+    display:grid;
+    grid-template-columns: 4fr 1fr;
+}
+
+input.search-submit, input.search-field {
+    border:none;
+    height: 5vh;
+}
+
+input.search-field {
+    border-top-left-radius: 0.5rem;
+    border-bottom-left-radius: 0.5rem;
+    border:1px solid black;
+    border-right:none;
+}
+
+input.search-submit {
+    border-top-right-radius: 0.5rem;
+    border-bottom-right-radius: 0.5rem;
+    border:1px solid black;
+    border-left:none;
+    background:transparent;
+}
+
+
+input.search-submit:hover {
+    cursor:pointer;
+}
 /******************************** styling hamburger menu ********************************/
 @media screen and (max-width: 39.9375em) {
     /* header.site-header{
