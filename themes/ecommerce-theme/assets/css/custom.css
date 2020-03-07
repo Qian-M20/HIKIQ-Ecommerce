@@ -10,7 +10,7 @@ body {
 header.site-header {
     background: rgba(235,237,238,.8);
     /* background:transparent; */
-    height:10vh;
+    /* height:10vh; */
     position:fixed;
     z-index: 10001;
     margin-top: -10vh;
@@ -19,6 +19,19 @@ header.site-header {
     display:flex;
     align-items: center;
 }
+
+
+/* for mobile viewport */
+@media screen and (max-width: 39.9375em) {
+    #header-widget-area {
+        display:none;
+    }
+    .widget_archive, .widget_shopping_cart, .widget_products {
+        display:none;
+    }
+
+}
+
 .site-branding img {
     width:60%;
 }
@@ -29,11 +42,20 @@ header.site-header {
 
 ul#primary-menu {
     display:flex;
-    justify-content: flex-end;
+    justify-content: center;
 }
 
 ul#primary-menu li {
     list-style: none;
+}
+
+.grid-margin-x>.cell {
+    margin-left:0;
+    margin-right:0;
+}
+
+header .widget-area {
+    padding:0;
 }
 
 ul#primary-menu li a{
@@ -64,6 +86,36 @@ header .hamburger, header #toggle {
     align-items: center;
 }
 
+/* styling for search bar */
+form.search-form {
+    display:grid;
+    grid-template-columns: 4fr 1fr;
+}
+
+input.search-submit, input.search-field {
+    border:none;
+    height: 5vh;
+}
+
+input.search-field {
+    border-top-left-radius: 0.5rem;
+    border-bottom-left-radius: 0.5rem;
+    border:1px solid black;
+    border-right:none;
+}
+
+input.search-submit {
+    border-top-right-radius: 0.5rem;
+    border-bottom-right-radius: 0.5rem;
+    border:1px solid black;
+    border-left:none;
+    background:transparent;
+}
+
+
+input.search-submit:hover {
+    cursor:pointer;
+}
 /******************************** styling hamburger menu ********************************/
 @media screen and (max-width: 39.9375em) {
     /* header.site-header{
@@ -192,6 +244,7 @@ header .hamburger, header #toggle {
 
 .footerLinks.grid-x.grid-margin-x {
     width:100%;
+    margin-left:0;
 }
 .menu-social-menu-container, .menu-footer-menu-container {
     display:flex;
@@ -206,9 +259,16 @@ header .hamburger, header #toggle {
 }
 
 .menu-footer-menu-container .menu {
-    width:35%;
+    widows: 30%;
     display:flex;
-    justify-content: space-around;
+    justify-content: center;
+    padding-left:0;
+}
+
+.menu-footer-menu-container .menu li{
+    display:block;
+    margin-left:1em;
+    margin-right:1em;
 }
 
 .menu a {
@@ -222,15 +282,46 @@ header .hamburger, header #toggle {
     background-color: #f10205;
     padding:5px;
     display:flex;
+    flex-direction:column;
     justify-content: center;
+    color: #0a0a0a;
+    margin-right: 10px;
+    font-family: futura;
+    display: block;
+    width: 100%;
+    text-align: center;
+    padding:1em;
 }
 
-.site-info a, .site-info span {
+.site-info a {
     text-decoration: none;
     color:#0a0a0a;
     margin-right:10px;
     font-family: futura;
+    display:block;
+    width:100%;
+    text-align: center;
+    display:inline;
+}
+/* styling for social media links */
 
+
+ul.social-media {
+    width: 20%;
+    margin-left: auto;
+    margin-right: auto;
+    display: flex;
+    justify-content: space-evenly;
+    padding-left:0;
+}
+
+ul.social-media li {
+    list-style: none;
+}
+
+ul.social-media li a{
+    color:#0ba987;
+    font-size:2.5em;
 }
 
 
