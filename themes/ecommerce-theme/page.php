@@ -16,7 +16,10 @@ get_header();
 ?>
 
 	<div id="primary" class="content-area grid-container">
+
+	
 		<main id="main" class="site-main grid-x">
+	
 			<aside class="cell large-3 medium-3">
 				<?php
 					if ( ! is_active_sidebar( 'sidebar-1' ) ) {

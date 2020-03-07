@@ -10,7 +10,7 @@ body {
 header.site-header {
     background: rgba(235,237,238,.8);
     /* background:transparent; */
-    height:10vh;
+    /* height:10vh; */
     position:fixed;
     z-index: 10001;
     margin-top: -10vh;
@@ -19,6 +19,19 @@ header.site-header {
     display:flex;
     align-items: center;
 }
+
+
+/* for mobile viewport */
+@media screen and (max-width: 39.9375em) {
+    #header-widget-area {
+        display:none;
+    }
+    .widget_archive, .widget_shopping_cart, .widget_products {
+        display:none;
+    }
+
+}
+
 .site-branding img {
     width:60%;
 }

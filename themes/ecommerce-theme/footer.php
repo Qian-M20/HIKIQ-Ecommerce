@@ -16,7 +16,7 @@
 	<footer id="colophon" class="site-footer">
 		<div class="footerLinks grid-x grid-margin-x">
 			<nav id="social-navigation" class="social-navigation cell large-12 medium-12 grid-x align-middle">
-				<?php if(get_theme_mod('ecommerce_theme_facebook_url') ||  get_theme_mod('ecommerce_theme_twitter_url') ){?> 
+				<?php if(get_theme_mod('ecommerce_theme_facebook_url') ||  get_theme_mod('ecommerce_theme_twitter_url') || get_theme_mod('ecommerce_theme_instagram_url') || get_theme_mod('ecommerce_theme_pinterest_url')){?> 
 					<ul class="social-media">
 						<?php if(get_theme_mod('ecommerce_theme_facebook_url')) {?> 
 							<li class="facebook">
