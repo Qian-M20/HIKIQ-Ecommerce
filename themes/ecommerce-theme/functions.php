@@ -282,6 +282,12 @@ function ecommerce_theme_scripts() {
 		get_stylesheet_directory_uri() . '/assets/css/contact.css',
 		array()
 	);
+	// Enqueue about page style ********************************************
+	wp_enqueue_style(
+		'about-style',
+		get_stylesheet_directory_uri() . '/assets/css/about.css',
+		array()
+	);
 
 	// Enqueue what input js
 	wp_enqueue_script ( 'sample-theme-what-input', get_template_directory_uri() .'/assets/js/vendor/what-input.js', array('jquery'), '6.5.1', true);
