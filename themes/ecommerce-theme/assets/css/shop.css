@@ -23,10 +23,14 @@ h2.woocommerce-loop-product__title {
 }
 
 .woocommerce #respond input#submit, .woocommerce a.button, .woocommerce button.button, .woocommerce input.button {
-    background-color: #0ba987;
-    color:white;
+    background-color: transparent;
+    color:#0ba987;
     margin:0 auto;
     width:100%;
     text-align: center;
 }
 
+.woocommerce ul.products li.product .button {
+    margin-top:0;
+    width:100%;
+}
