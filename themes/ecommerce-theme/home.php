@@ -11,7 +11,6 @@ get_header();
 			<div class=" cell large-1"></div>
 
 			<article class="cell large-10" id="bodyText">
-			<aside >
 				<?php
 				/**
 				 * Custom WP_Query
@@ -51,20 +50,7 @@ get_header();
 				}
 				wp_reset_postdata();
 				?>
-			</aside>
-				<?php
-					/* Start the Loop */
-					while ( have_posts() ) :
-						the_post();    
-
-						get_template_part( 'template-parts/content/content', 'page' );
-					
-						// If comments are open or we have at least one comment, load up the comment template.
-						if ( comments_open() || get_comments_number() ) {
-							comments_template();
-						}
-					endwhile; // End of the loop.
-				?>
+			
 			</article>	
 			<div class='cell large-1'></div>
 			
