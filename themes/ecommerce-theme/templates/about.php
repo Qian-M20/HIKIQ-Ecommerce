@@ -35,7 +35,10 @@ get_header();
 
 				endwhile; // End of the loop.
 				?>
-			</div>	
+            </div>	
+            <div class="cell large-6 shoe">
+
+                </div>
 
 		</main><!-- #main -->
 	</div><!-- #primary -->
