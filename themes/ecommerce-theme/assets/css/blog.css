@@ -1,0 +1,4 @@
+/* getting a border around the post */
+article {
+    border: 2px solid black;
+}

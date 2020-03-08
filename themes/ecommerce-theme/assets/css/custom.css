@@ -334,7 +334,7 @@ ul.social-media li a{
 
 .wp-block-image img {
     width:100%;
-    padding: 30px;
+    padding: 0px;
     background-position: center;
     background-size: cover;
 }
@@ -342,9 +342,11 @@ ul.social-media li a{
 /* Red div */
 .is-style-red-div {
     width: 100%;
-    height: 710px;
+    height: 130px;
+    padding: 40px 0 20px 60px;
     background: #c11e1c;
     font-size: 30px;
+    margin: 0 !important;
     font-weight: bolder;
 }
 
@@ -371,6 +373,30 @@ p.has-text-color a {
 
 .wp-block-quote.is-style-about-quote p{
     font-family: 'Gill Sans', sans-serif;
-    font-size: 27px;
-    margin: 10px 100px;
+    font-size: 32px;
+    margin: 0 150px 0 0;
+    color: white;
+}
+
+blockquote {
+    display: block;
+    margin-block-start: 1em;
+    margin-block-end: 1em;
+    margin-inline-start: 40px;
+    margin-inline-end: 40px;
+}
+
+.wp-block-quote {
+    border-left: 10px solid white;
+    /* margin-left: 50px; */
+    background-color: #c11e1c;
+    padding-bottom: 80px;
+    max-width: 90% !important;
+    margin: 0 auto !important;
+}
+
+.wp-block-quote__citation, .wp-block-quote cite, .wp-block-quote footer {
+    color: #000;
+    margin-left: 170px;
+    font-size: 23px;
 }
