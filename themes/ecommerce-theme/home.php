@@ -26,7 +26,7 @@ get_header();
 				?>
 					<div>
 						<div class="post-list height-1">
-							<div class="grid-x">
+							<div class="grid-x paddingAround">
 								
 								<?php
 								while ( $test_query->have_posts() ) {
@@ -36,10 +36,11 @@ get_header();
 										<div id="post-<?php echo get_the_ID(); ?>">
 											<!-- post-thumbnail -->
 											<div class="custom post-thumbnail">
-												<a href="<?php the_permalink(); ?>"><?php the_post_thumbnail('small-thumbnail'); ?></a>
+												<a href="<?php the_permalink(); ?>" target="_blank"><?php the_post_thumbnail('small-thumbnail'); ?></a>
 											</div><!-- post-thumbnail -->
-											<a href="<?php the_permalink(); ?>"><h4 class="text-center postTitle"><?php echo get_the_title(); ?></h4></a>
+											<a href="<?php the_permalink(); ?>" target="_blank"><h4 class="text-center postTitle"><?php echo get_the_title(); ?></h4></a>
 											<p class="postExcerpt"><?php echo get_the_excerpt(); ?></p>
+											<a class="readMore" href="<?php the_permalink(); ?>" target="_blank">Read More</a>
 										</div>
 									</div>
 								<?php } ?>
