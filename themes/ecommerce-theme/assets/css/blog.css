@@ -1,4 +1,19 @@
-/* getting a border around the post */
-article {
-    border: 2px solid black;
+.post-list-wrapper {
+    padding: 15px;
+
 }
+
+.postTitle {
+    font-size: 1.1em;
+    color: #000;
+    font-family: futura;
+    margin-right: 2vw;
+    text-decoration: none !important;
+}
+
+.postExcerpt {
+    font-family: Arial, sans-serif;
+}
+
+
+
