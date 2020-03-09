@@ -34,3 +34,14 @@ h2.woocommerce-loop-product__title {
     margin-top:0;
     width:100%;
 }
+
+
+/* cart page styling */
+
+tr.woocommerce-cart-form__cart-item td.product-thumbnail {
+    width:100px;
+}
+
+tr.woocommerce-cart-form__cart-item td.product-thumbnail img {
+    width:100%;
+}
