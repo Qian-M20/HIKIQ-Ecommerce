@@ -47,7 +47,7 @@ tr.woocommerce-cart-form__cart-item td.product-thumbnail img {
 }
 
 h2 {
-    text-align: center;
+    text-align: left;
     color: #676767;
 }
 
@@ -58,4 +58,14 @@ h2 {
 
 .woocommerce .cart-collaterals .cart_totals, .woocommerce-page .cart-collaterals .cart_totals {
     width:100%;
+}
+
+.woocommerce-cart-form__cart-item.cart_item {
+    color:#676767;
+}
+
+.woocommerce-cart-form__cart-item.cart_item .product-name a {
+    text-decoration: none;
+    color:#676767;
+    font-weight: bolder;
 }
