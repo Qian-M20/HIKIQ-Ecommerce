@@ -50,3 +50,12 @@ h2 {
     text-align: center;
     color: #676767;
 }
+
+.content-area.grid-container {
+    padding-left:2em;
+    padding-right:2em;
+}
+
+.woocommerce .cart-collaterals .cart_totals, .woocommerce-page .cart-collaterals .cart_totals {
+    width:100%;
+}
