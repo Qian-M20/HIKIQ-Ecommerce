@@ -26,13 +26,13 @@ get_header();
 				?>
 					<div>
 						<div class="post-list height-1">
-							<div class="grid-x paddingAround">
+							<div class="grid-x paddingAround grid-margin-x">
 								
 								<?php
 								while ( $test_query->have_posts() ) {
 									$test_query->the_post();
 									?>
-									<div class="cell small-12 medium-6 large-4 custom post-list-wrapper">
+									<div class="cell small-12 medium-6 large-4 custom post-list-wrapper grid-margin-x grid-x">
 										<div id="post-<?php echo get_the_ID(); ?>">
 											<!-- post-thumbnail -->
 											<div class="custom post-thumbnail">

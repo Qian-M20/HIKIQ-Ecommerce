@@ -45,5 +45,8 @@
     text-decoration: underline;
 }
 
+.grid-x.paddingAround.grid-margin-x {
+    justify-content: center;
+}
 
 
