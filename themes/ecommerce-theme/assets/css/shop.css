@@ -45,3 +45,8 @@ tr.woocommerce-cart-form__cart-item td.product-thumbnail {
 tr.woocommerce-cart-form__cart-item td.product-thumbnail img {
     width:100%;
 }
+
+h2 {
+    text-align: center;
+    color: #676767;
+}
