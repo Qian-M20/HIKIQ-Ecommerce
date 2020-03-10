@@ -286,6 +286,8 @@ function ecommerce_theme_scripts() {
 	wp_enqueue_style(
 		'about-style',
 		get_stylesheet_directory_uri() . '/assets/css/about.css',
+		array()
+	);
 
 	// Enqueue shop single page style ********************************************
 	wp_enqueue_style(
@@ -294,6 +296,7 @@ function ecommerce_theme_scripts() {
 		array()
 	);
 	
+
 	// Enqueue blog archive page style ********************************************
 	wp_enqueue_style(
 		'blog-style',
