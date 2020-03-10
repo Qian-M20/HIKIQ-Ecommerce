@@ -47,6 +47,8 @@
 							</li>
 						<?php } ?>
 
+						TEST
+
 						<?php if(get_theme_mod('ecommerce_theme_twitter_url')) {?> 
 							<li class="twitter">
 								<a href="<?php echo get_theme_mod('ecommerce_theme_twitter_url')?>">
