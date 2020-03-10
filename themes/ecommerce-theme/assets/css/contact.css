@@ -14,9 +14,11 @@
     font-family: futura;
     font-size: 2em;
     padding: 5px;
-    width: 250%;
 }
 
+.has-text-color.has-background.has-huge-font-size.has-black-blue-color.has-dark-cyan-background-color {
+    width: 260%;
+}
 
 
 @media print, screen and (min-width: 40em){
