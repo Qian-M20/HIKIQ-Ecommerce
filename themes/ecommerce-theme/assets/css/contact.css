@@ -3,9 +3,9 @@ p {
 }
 
 .shoeBox{
-    /* background-image: url(../img/pic.png); */
-    width: 20px;
-    background-repeat: no-repeat;
+    background-image: url(../img/pic.png);
+    /* background-repeat: no-repeat;
+    background-size: contain; */
 }
 
 h1{
