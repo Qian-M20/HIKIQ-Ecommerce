@@ -64,3 +64,7 @@
 .comment-form-comment {
     display: none;
 }
+
+#reply-title {
+    display: none;
+}
