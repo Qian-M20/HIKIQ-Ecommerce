@@ -286,6 +286,32 @@ function ecommerce_theme_scripts() {
 	wp_enqueue_style(
 		'about-style',
 		get_stylesheet_directory_uri() . '/assets/css/about.css',
+
+	// Enqueue shop single page style ********************************************
+	wp_enqueue_style(
+		'shopSingle-style',
+		get_stylesheet_directory_uri() . '/assets/css/shopSingle.css',
+		array()
+	);
+	
+	// Enqueue blog archive page style ********************************************
+	wp_enqueue_style(
+		'blog-style',
+		get_stylesheet_directory_uri() . '/assets/css/blog.css',
+		array()
+	);
+
+	// Blog single archive page style ********************************************
+	wp_enqueue_style(
+		'blogSingle-style',
+		get_stylesheet_directory_uri() . '/assets/css/blogSingle.css',
+		array()
+	);
+
+	// Enqueue my account page style ********************************************
+	wp_enqueue_style(
+		'myAccount-style',
+		get_stylesheet_directory_uri() . '/assets/css/myAccount.css',
 		array()
 	);
 
