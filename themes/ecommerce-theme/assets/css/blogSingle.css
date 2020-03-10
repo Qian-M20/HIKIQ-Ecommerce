@@ -1,3 +1,23 @@
 .singleMain .post-thumbnail > img{
     display: none;
 }
+
+/* styling header for single page */
+.entry-content > h2{
+    position: relative;
+    text-align: center;
+    padding: 50px 15px 0px 15px ;
+    margin-bottom: 60px;
+    font-family: futura;
+    font-size: 30px;
+}
+
+.entry-content > h2::before {
+    content: '';
+    left: 20%;
+    right: 20%;
+    position: absolute;
+    height: 2px;
+    background-color: #0ba987;
+    bottom: 0px;
+}
