@@ -276,6 +276,34 @@ function ecommerce_theme_scripts() {
 		array()
 	);
 
+	// Enqueue shop single page style ********************************************
+	wp_enqueue_style(
+		'shopSingle-style',
+		get_stylesheet_directory_uri() . '/assets/css/shopSingle.css',
+		array()
+	);
+	
+	// Enqueue blog archive page style ********************************************
+	wp_enqueue_style(
+		'blog-style',
+		get_stylesheet_directory_uri() . '/assets/css/blog.css',
+		array()
+	);
+
+	// Blog single archive page style ********************************************
+	wp_enqueue_style(
+		'blogSingle-style',
+		get_stylesheet_directory_uri() . '/assets/css/blogSingle.css',
+		array()
+	);
+
+	// Enqueue my account page style ********************************************
+	wp_enqueue_style(
+		'myAccount-style',
+		get_stylesheet_directory_uri() . '/assets/css/myAccount.css',
+		array()
+	);
+
 	// Enqueue what input js
 	wp_enqueue_script ( 'sample-theme-what-input', get_template_directory_uri() .'/assets/js/vendor/what-input.js', array('jquery'), '6.5.1', true);
 
