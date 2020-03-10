@@ -77,3 +77,8 @@
 .entry-footer {
     display: none;
 }
+
+/* Modula gallery modification */  
+.modula-gallery{
+    padding-bottom: 50px;
+}
