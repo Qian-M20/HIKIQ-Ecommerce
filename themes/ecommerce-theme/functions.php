@@ -345,6 +345,11 @@ wp_enqueue_script('FontAwesome');
 require get_template_directory() . '/inc/template-tags.php';
 
 /**
+ * registering custom post types
+ */
+require get_template_directory() . '/inc/post-types.php';
+
+/**
  * Custom block editor
  */
 require get_template_directory() . '/inc/block-editor.php';
