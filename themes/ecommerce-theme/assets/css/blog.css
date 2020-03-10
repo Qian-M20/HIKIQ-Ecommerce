@@ -1,4 +1,74 @@
-/* getting a border around the post */
-article {
-    border: 2px solid black;
+.post-list-wrapper {
+    background-color: #fff;
+    margin: 10px;
+    padding: 20px;
+    -webkit-box-shadow: 0px 0px 6px 0px rgba(0,0,0,0.75);
+    -moz-box-shadow: 0px 0px 6px 0px rgba(0,0,0,0.75);
+    box-shadow: 0px 0px 6px 0px rgba(0,0,0,0.75);
+    border-radius: 15px;
+    transition: .4s all ease-in-out;
+}
+
+.post-list-wrapper:hover {
+    transform: scale(1.02);
+    -webkit-box-shadow: 0px 0px 16px 0px rgba(0,0,0,0.8);
+    -moz-box-shadow: 0px 0px 16px 0px rgba(0,0,0,0.8);
+    box-shadow: 0px 0px 16px 0px rgba(0,0,0,0.8);
+}
+
+.paddingAround {
+    padding: 20px;
+}
+
+.postTitle {
+    font-size: 1.1em;
+    color: #000;
+    font-family: futura;
+    margin-right: 2vw;
+    text-decoration: none !important;
+}
+
+.postExcerpt {
+    font-family: Arial, sans-serif;
+}
+
+.readMore {
+    width: 80px;
+    height: 10px;
+    padding: 8px;
+    border-radius: 7px;
+    background-color: #0ba987;
+    color: white;
+    text-decoration: none;
+}
+
+.readMore:hover {
+    text-decoration: underline;
+}
+
+.grid-x.paddingAround.grid-margin-x {
+    justify-content: center;
+}
+
+.blogTitle {
+    position: relative;
+    text-align: center;
+    padding: 50px 0 0 0;
+    font-family: futura;
+    font-size: 50px;
+}
+
+.blogTitle:before {
+    content: '';
+    left: 40%;
+    right: 40%;
+    position: absolute;
+    height: 2px;
+    background-color: #0ba987;
+    bottom: 0px;
+}
+
+/* Image on top */
+.lb-outerContainer {
+    z-index: 10020;
 }
