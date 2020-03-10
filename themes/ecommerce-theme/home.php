@@ -9,7 +9,7 @@ get_header();
 	<section id="primary" class="content-area grid-container">
 		<main id="main" class="site-main">
 			<div class=" cell large-1"></div>
-
+				<h1 class="blogTitle">BLOG</h1>
 			<article class="cell large-10" id="bodyText">
 				<?php
 				/**

@@ -49,4 +49,22 @@
     justify-content: center;
 }
 
+.blogTitle {
+    position: relative;
+    text-align: center;
+    padding: 50px 0 0 0;
+    font-family: futura;
+    font-size: 50px;
+}
+
+.blogTitle:before {
+    content: '';
+    left: 40%;
+    right: 40%;
+    position: absolute;
+    height: 2px;
+    background-color: #0ba987;
+    bottom: 0px;
+}
+
 
