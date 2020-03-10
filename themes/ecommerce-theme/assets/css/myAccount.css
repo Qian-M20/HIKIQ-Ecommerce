@@ -49,3 +49,21 @@ h2 {
 .woocommerce-MyAccount-content strong {
     color:#676767;
 }
+
+.woocommerce .col2-set .col-1, .woocommerce-page .col2-set .col-1 {
+    width:100%;
+}
+
+.woocommerce .col2-set .col-2, .woocommerce-page .col2-set .col-2 {
+    width:100%;
+}
+
+.woocommerce-account .addresses .title h3 {
+    color:#0ba987;
+}
+
+.woocommerce-account .addresses .title .edit {
+    text-decoration: none;
+    color:#c11e1c;
+    font-weight: bolder;
+}
