@@ -22,8 +22,7 @@ p {
     width: 100%;
 }
 
-/* .grid-x>.large-6 {
-width: 30%;} */
+
 
 @media print, screen and (min-width: 40em){
 .grid-x>.large-6 {
