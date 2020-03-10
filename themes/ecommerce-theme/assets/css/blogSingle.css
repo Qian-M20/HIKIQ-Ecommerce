@@ -68,3 +68,7 @@
 #reply-title {
     display: none;
 }
+
+.form-submit {
+    display: none;
+}
