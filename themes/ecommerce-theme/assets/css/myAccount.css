@@ -37,7 +37,7 @@ h2 {
 
 .woocommerce-MyAccount-content {
     background-color:#f7f6f7;
-    padding:1em;
+    padding:1.5em;
 }
 
 .woocommerce-MyAccount-content p a {
@@ -66,4 +66,20 @@ h2 {
     text-decoration: none;
     color:#c11e1c;
     font-weight: bolder;
+}
+
+.woocommerce form .form-row {
+    margin: 0 0 24px;
+}
+
+.woocommerce form .form-row label {
+    color: #590212;
+}
+
+.woocommerce form .form-row input.input-text, .woocommerce form .form-row textarea {
+    padding:0.5em;
+}
+
+.woocommerce form .form-row input.input-text, .woocommerce form .form-row textarea {
+    color:#676767;
 }
