@@ -168,8 +168,31 @@ input.search-submit:hover {
     }
 }
 
+/********************************* styling for homepage *********************************/
+.wp-block-group {
+    text-align: right;
+    width: 50%;
+    float: left;
+    height:100%;
+}
 
+.wp-block-group .wp-block-group__inner-container h2 {
+    text-align: right;
 
+}
+
+.wp-image-266 {
+    width:100%;
+}
+.wp-image-267 {
+    width:50%;
+    float:right;
+}
+
+.wp-image-270 {
+    width:50%;
+    float:left;
+}
 /******************************** styling main page content ********************************/
 #primary {
     margin-top:10vh;
@@ -333,7 +356,7 @@ ul.social-media li a{
 }
 
 .wp-block-image img {
-    width:100%;
+    /* width:100%; */
     padding: 0px;
     background-position: center;
     background-size: cover;
