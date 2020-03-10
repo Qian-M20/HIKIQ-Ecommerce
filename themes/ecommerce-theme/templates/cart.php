@@ -1,11 +1,9 @@
 <?php
 /**
- * The template for displaying all pages
+ * Template Name: cart
  *
- * This is the template that displays all pages by default.
- * Please note that this is the WordPress construct of pages
- * and that other 'pages' on your WordPress site may use a
- * different template.
+ *
+ * This is the template that displays cart page
  *
  * @link https://developer.wordpress.org/themes/basics/template-hierarchy/
  *
@@ -20,18 +18,7 @@ get_header();
 	
 		<main id="main" class="site-main grid-x">
 	
-			<aside class="cell large-3 medium-3">
-				<?php
-					if ( ! is_active_sidebar( 'sidebar-1' ) ) {
-							return;
-					}
-					?>
-					<div id="secondary" class="widget-area">
-						<?php dynamic_sidebar( 'sidebar-1' ); ?>
-					</div>
-			</aside> 
-
-			<div class="cell large-9 medium-9">
+			<div class="cell large-12 medium-12">
 				<?php
 				while ( have_posts() ) :
 					the_post();
