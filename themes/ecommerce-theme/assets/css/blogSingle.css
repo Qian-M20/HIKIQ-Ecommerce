@@ -59,3 +59,8 @@
     background-color: #0ba987;
     bottom: 0px;
 }
+
+/* removing comment from the blogs */
+.comment-form-comment {
+    display: none;
+}
