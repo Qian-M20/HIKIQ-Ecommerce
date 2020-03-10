@@ -1,3 +1,4 @@
+/* image */
 .shoeBox{
     background-image: url(../img/pic.png);
     background-repeat: no-repeat;
@@ -22,7 +23,7 @@
 .grid-x>.large-6 {
     width: 40%;
 }
-
+/* red bar */
 .wp-block-quote.is-style-contact-quote {
     background-color: #c11e1c;
     color: white;
