@@ -16,9 +16,7 @@
     padding: 5px;
 }
 
-.has-text-color.has-background.has-huge-font-size.has-black-blue-color.has-dark-cyan-background-color {
-    width: 260%;
-}
+
 
 
 @media print, screen and (min-width: 40em){
