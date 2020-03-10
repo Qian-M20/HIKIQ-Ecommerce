@@ -1,0 +1,35 @@
+/* image */
+.shoeBox{
+    background-image: url(../img/pic.png);
+    background-repeat: no-repeat;
+    background-size: contain;
+    margin-top: 235px;
+    margin-left: 90px;
+}
+
+
+.wp-block-quote.is-style-contact-quote {
+    background-color: #c11e1c;
+    color: white;
+    font-family: futura;
+    font-size: 2em;
+    padding: 5px;
+}
+
+
+
+
+@media print, screen and (min-width: 40em){
+.grid-x>.large-6 {
+    width: 40%;
+}
+/* red bar */
+.wp-block-quote.is-style-contact-quote {
+    background-color: #c11e1c;
+    color: white;
+    font-family: futura;
+    font-size: 2em;
+    padding: 5px;
+    width: 255%;
+}
+}

@@ -1,6 +1,6 @@
 <?php
 /**
- * Template Name: sidebar-right
+ * Template Name: about
  * 
  * 
  * The template for displaying sidebar on the right pages
@@ -35,7 +35,8 @@ get_header();
 
 				endwhile; // End of the loop.
 				?>
-			</div>	
+            </div>	
+            -->
 
 		</main><!-- #main -->
 	</div><!-- #primary -->

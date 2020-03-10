@@ -1,0 +1,22 @@
+/* styling h2 */
+h2{
+    font-size: 40px;
+
+}
+/* styling p tag */
+ p{
+    margin-top: 80px;
+    color: #000;
+}
+/* styling cite */
+cite{
+font-weight: bold;
+font-size: 20px;
+}
+
+.has-text-color.has-background.has-huge-font-size.has-black-blue-color.has-dark-cyan-background-color {
+    margin: 0;
+    text-align: left;
+    font-size: 50px;
+    color: #fff;
+}
