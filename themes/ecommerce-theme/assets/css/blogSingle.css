@@ -10,6 +10,7 @@
     margin-bottom: 60px;
     font-family: futura;
     font-size: 30px;
+    text-transform: uppercase;
 }
 
 .entry-content > h2::before {
