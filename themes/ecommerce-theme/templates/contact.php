@@ -36,7 +36,7 @@ get_header();
 				endwhile; // End of the loop.
 				?>
 			</div>	
-
+				<!-- shoes picture -->
             <div class="cell large-6 shoeBox">
             
                 </div>
