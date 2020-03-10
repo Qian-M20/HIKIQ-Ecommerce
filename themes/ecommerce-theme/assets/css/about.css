@@ -13,3 +13,10 @@ cite{
 font-weight: bold;
 font-size: 20px;
 }
+
+.has-text-color.has-background.has-huge-font-size.has-black-blue-color.has-dark-cyan-background-color {
+    margin: 0;
+    text-align: left;
+    font-size: 50px;
+    color: #fff;
+}
