@@ -38,8 +38,8 @@ get_header();
 			</div>	
 
             <div class="cell large-6 shoeBox">
-                <img src="../assets/img/pic.png" alt="wef">
-               <h1>shiqhiah</h1>
+                <!-- <img src="./pic.png" alt="wef"> -->
+               <!-- <h1>shiqhiah</h1> -->
                 </div>
 
 		</main><!-- #main -->
