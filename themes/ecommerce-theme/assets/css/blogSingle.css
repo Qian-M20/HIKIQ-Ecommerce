@@ -90,3 +90,8 @@
     float: left;
     height:100%;
 }
+
+/* making changes so that the paragraph do not have the margin on top */
+.singleMain .entry-content p {
+    margin: 0;
+}
