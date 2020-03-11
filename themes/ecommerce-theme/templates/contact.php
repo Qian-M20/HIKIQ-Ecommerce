@@ -1,6 +1,6 @@
 <?php
 /**
- * Template Name: sidebar-right
+ * Template Name: contact
  * 
  * 
  * The template for displaying sidebar on the right pages
@@ -21,7 +21,7 @@ get_header();
 	<div id="primary" class="content-area grid-container">
 		<main id="main" class="site-main grid-x">
 
-			<div class="cell large-12 medium-12">
+			<div class="cell large-6 medium-12">
 				<?php
 				while ( have_posts() ) :
 					the_post();
@@ -36,6 +36,10 @@ get_header();
 				endwhile; // End of the loop.
 				?>
 			</div>	
+				<!-- shoes picture -->
+            <div class="cell large-6 shoeBox">
+            
+                </div>
 
 		</main><!-- #main -->
 	</div><!-- #primary -->

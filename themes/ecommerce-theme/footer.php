@@ -13,6 +13,27 @@
 
 	</div><!-- #content -->
 
+	<!-- <?php
+	$args = array(
+		'post_type' => 'ecommerce_theme_book',
+		'post_not_in' => array(
+			get_the_ID(),
+		),
+	);
+
+	$books = new WP_Query($args);
+
+	if($books->have_posts()){
+		while($books->have_posts()){
+			$books->the_post();
+			?>
+			<h2><?php echo get_the_title()?></h2>
+			<?php
+		}
+	}
+	?> -->
+
+	
 	<footer id="colophon" class="site-footer">
 		<div class="footerLinks grid-x grid-margin-x">
 			<nav id="social-navigation" class="social-navigation cell large-12 medium-12 grid-x align-middle">
@@ -25,6 +46,8 @@
 								</a>
 							</li>
 						<?php } ?>
+
+						TEST
 
 						<?php if(get_theme_mod('ecommerce_theme_twitter_url')) {?> 
 							<li class="twitter">

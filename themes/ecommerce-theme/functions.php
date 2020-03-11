@@ -276,6 +276,19 @@ function ecommerce_theme_scripts() {
 		array()
 	);
 
+	// Enqueue contact page style ********************************************
+	wp_enqueue_style(
+		'contact-style',
+		get_stylesheet_directory_uri() . '/assets/css/contact.css',
+		array()
+	);
+	// Enqueue about page style ********************************************
+	wp_enqueue_style(
+		'about-style',
+		get_stylesheet_directory_uri() . '/assets/css/about.css',
+		array()
+	);
+
 	// Enqueue shop single page style ********************************************
 	wp_enqueue_style(
 		'shopSingle-style',
@@ -283,6 +296,7 @@ function ecommerce_theme_scripts() {
 		array()
 	);
 	
+
 	// Enqueue blog archive page style ********************************************
 	wp_enqueue_style(
 		'blog-style',
@@ -329,6 +343,11 @@ wp_enqueue_script('FontAwesome');
  * Custom template tags for this theme.
  */
 require get_template_directory() . '/inc/template-tags.php';
+
+/**
+ * registering custom post types
+ */
+require get_template_directory() . '/inc/post-types.php';
 
 /**
  * Custom block editor
