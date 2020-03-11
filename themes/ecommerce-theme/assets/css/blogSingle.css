@@ -82,3 +82,11 @@
 .modula-gallery{
     padding-bottom: 50px;
 }
+
+/* making the wp-block for single blog page 100% */
+.singleMain .wp-block-group {
+    text-align: right;
+    width: 100%;
+    float: left;
+    height:100%;
+}
