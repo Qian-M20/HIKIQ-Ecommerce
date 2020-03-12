@@ -94,4 +94,7 @@
 /* making changes so that the paragraph do not have the margin on top */
 .singleMain .entry-content p {
     margin: 0;
+    font-family: futura;
+    text-align: left;
+    color: #333;
 }
