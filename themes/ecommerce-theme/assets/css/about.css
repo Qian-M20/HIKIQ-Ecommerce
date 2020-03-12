@@ -13,6 +13,12 @@ cite{
 font-weight: bold;
 font-size: 20px;
 }
+.wp-block-image img {
+    width: 100%;
+    padding: 0px;
+    background-position: center;
+    background-size: cover;
+}
 
 .has-text-color.has-background.has-huge-font-size.has-black-blue-color.has-dark-cyan-background-color {
     margin: 0;
