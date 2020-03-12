@@ -13,10 +13,48 @@ cite{
 font-weight: bold;
 font-size: 20px;
 }
+.wp-block-image img {
+    width: 100%;
+    padding: 0px;
+    background-position: center;
+    background-size: cover;
+}
 
 .has-text-color.has-background.has-huge-font-size.has-black-blue-color.has-dark-cyan-background-color {
     margin: 0;
     text-align: left;
     font-size: 50px;
     color: #fff;
+}
+
+.wp-block-quote.is-style-about-quote p {
+    font-family: 'Gill Sans', sans-serif;
+    font-size: 27px;
+    margin: 0 15px 0 0;
+    color: black;
+    background-color: white;
+    text-align: center;
+
+}
+
+ .wp-block-quote {
+    border-left: 10px solid white;
+    background-color: #fff;
+    padding-bottom: 80px;
+    max-width: 90% !important;
+    margin: 0 auto !important;
+}
+
+.wp-block-quote cite{
+    margin: 0;
+}
+
+.ad{
+    background-color: #0ba987;
+    color: #fff;
+}
+
+.ad h1{
+    font-size: 50px;
+    padding: 10px;
 }
