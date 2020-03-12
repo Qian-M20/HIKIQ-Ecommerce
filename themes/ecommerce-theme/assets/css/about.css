@@ -48,3 +48,13 @@ font-size: 20px;
 .wp-block-quote cite{
     margin: 0;
 }
+
+.ad{
+    background-color: #0ba987;
+    color: #fff;
+}
+
+.ad h1{
+    font-size: 50px;
+    padding: 10px;
+}

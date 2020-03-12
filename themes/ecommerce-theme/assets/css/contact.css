@@ -4,9 +4,20 @@
     background-repeat: no-repeat;
     background-size: contain;
     margin-top: 235px;
-    margin-left: 90px;
+    /* margin-left: 90px; */
 }
 
+.cont{
+    background-color: #c11e1c;
+    line-height: 26px;
+}
+
+.cont h1{
+    font-size: 40px;
+}
+.cont h2{
+    font-size: 30px;
+}
 
 .wp-block-quote.is-style-contact-quote {
     background-color: #c11e1c;
@@ -14,6 +25,16 @@
     font-family: futura;
     font-size: 2em;
     padding: 5px;
+}
+
+.ad{
+    background-color: #0ba987;
+    color: #fff;
+}
+
+.ad h1{
+    font-size: 50px;
+    padding: 10px;
 }
 
 
