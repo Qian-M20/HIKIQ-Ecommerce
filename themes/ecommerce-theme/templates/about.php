@@ -35,10 +35,14 @@ get_header();
 
 				endwhile; // End of the loop.
 				?>
+					<div class="cell large-12 medium-12 ad">
+				<h1>SIGN UP FOR NEWS AND GET 50% OFF</h1>
+			</div>
             </div>	
             -->
-
+		
 		</main><!-- #main -->
+			
 	</div><!-- #primary -->
 
 <?php
