@@ -27,7 +27,6 @@ get_header();
 					the_post();
 
 					get_template_part( 'template-parts/content', 'page' );
-                    get_sidebar();
 					// If comments are open or we have at least one comment, load up the comment template.
 					if ( comments_open() || get_comments_number() ) :
 						comments_template();
@@ -39,7 +38,6 @@ get_header();
 				<h1>SIGN UP FOR NEWS AND GET 50% OFF</h1>
 			</div>
             </div>	
-            -->
 		
 		</main><!-- #main -->
 			

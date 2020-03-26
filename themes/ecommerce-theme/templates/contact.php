@@ -20,7 +20,6 @@ get_header();
 
 	<div id="primary" class="content-area grid-container">
 		<main id="main" class="site-main grid-x">
-<<<<<<< Updated upstream
 			<div class="cell large-12 medium-12 cont">
 				<h1>Contact</h1>
 				<h2>Getting in Touch is Easy</h2>
@@ -31,7 +30,6 @@ get_header();
 					the_post();
 
 					get_template_part( 'template-parts/content', 'page' );
-                    get_sidebar();
 					// If comments are open or we have at least one comment, load up the comment template.
 					if ( comments_open() || get_comments_number() ) :
 						comments_template();
@@ -45,33 +43,6 @@ get_header();
             
 				</div>
 				
-=======
-
-			<div class="cell large-12 medium-12 grid-x">
-				<div class="cell large-6">
-           		 
-					<?php
-					while ( have_posts() ) :
-						the_post();
-
-						get_template_part( 'template-parts/content', 'page' );
-						get_sidebar();
-						// If comments are open or we have at least one comment, load up the comment template.
-						if ( comments_open() || get_comments_number() ) :
-							comments_template();
-						endif;
-
-					endwhile; // End of the loop.
-					?>
-				</div>
-
-				 <div class="cell large-6 shoeBox">
-           		 </div>
-
-			</div>	
-				<!-- shoes picture -->
-           
->>>>>>> Stashed changes
 
 		</main><!-- #main -->
 		<div class="cell large-12 medium-12 ad">
