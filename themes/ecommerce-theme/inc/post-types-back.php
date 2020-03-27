@@ -53,7 +53,7 @@ function ecommerce_theme_init_post_types() {
         'supports'           => array( 'title', 'editor', 'author', 'thumbnail', 'excerpt', 'comments' ),
     );
 
-    register_post_type( 'ecom_journals', $args );
+    register_post_type( 'ecommerce_theme_book', $args );
     
 }
 

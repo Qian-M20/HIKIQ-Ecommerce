@@ -318,11 +318,21 @@ function ecommerce_theme_scripts() {
 		array()
 	);
 
+	// Enqueue custom posts type style, both archive and single  ********************************************
+	wp_enqueue_style(
+		'journal-style',
+		get_stylesheet_directory_uri() . '/assets/css/journal.css',
+		array()
+	);
+
 	// Enqueue what input js
-	wp_enqueue_script ( 'sample-theme-what-input', get_template_directory_uri() .'/assets/js/vendor/what-input.js', array('jquery'), '6.5.1', true);
+	wp_enqueue_script ( 'ecommerce-theme-what-input', get_template_directory_uri() .'/assets/js/vendor/what-input.js', array('jquery'), '6.5.1', true);
 
 	// Enqueue foundation min js
-	wp_enqueue_script ( 'sample-theme-foundation', get_template_directory_uri() .'/assets/js/vendor/foundation.min.js', array('jquery','ecommerce-theme-what-input'), '6.5.1', true);
+	wp_enqueue_script ( 'ecommerce-theme-foundation', get_template_directory_uri() .'/assets/js/vendor/foundation.min.js', array('jquery','ecommerce-theme-what-input'), '6.5.1', true);
+	
+	// Enqueue fontawesome
+	wp_enqueue_script ('FontAwesome', 'https://use.fontawesome.com/releases/v5.8.2/js/all.js', null, null, true );
 
 	
 	if ( is_singular() && comments_open() && get_option( 'thread_comments' ) ) {
@@ -330,13 +340,6 @@ function ecommerce_theme_scripts() {
 	}
 }
 add_action( 'wp_enqueue_scripts', 'ecommerce_theme_scripts' );
-
-
-/**
- * Enqueue fontawesome
- */
-wp_register_script( 'FontAwesome', 'https://use.fontawesome.com/releases/v5.8.2/js/all.js', null, null, true );
-wp_enqueue_script('FontAwesome');
 
 
 /**
