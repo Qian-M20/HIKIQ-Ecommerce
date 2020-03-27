@@ -23,7 +23,7 @@ get_header();
 			<aside class="cell large-3 medium-3">
 				<?php
 					if ( ! is_active_sidebar( 'sidebar-1' ) ) {
-							return;
+						return;
 					}
 					?>
 					<div id="secondary" class="widget-area">

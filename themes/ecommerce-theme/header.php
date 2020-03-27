@@ -20,13 +20,6 @@
 	<?php wp_head(); ?>
 </head>
 
-<body <?php body_class(); ?>>
-<!-- <h1>this is for test</h1> -->
-<div id="page" class="site">
-	<!-- <a class="skip-link screen-reader-text" href="#content">
-		<?php esc_html_e( 'Skip to content', 'ecommerce-theme' ); ?>
-	</a> -->
-
 	<header id="masthead" class="site-header grid-x grid-margin-x">
 		
 		<!-- <div class="cell large-1 medium-1 small-1"></div> -->
@@ -65,5 +58,3 @@
 		
 
 	</header><!-- #masthead -->
-
-	<div id="content" class="site-content">
