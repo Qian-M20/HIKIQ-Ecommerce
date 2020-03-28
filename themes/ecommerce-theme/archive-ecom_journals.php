@@ -42,7 +42,7 @@ get_header();
                             while ( $journals->have_posts() ) {
                                 $journals->the_post();
                                 ?>
-                                <div class="cell custom post-list-wrapper grid-margin-x grid-x">
+                                <div class="journalWrapper cell custom post-list-wrapper grid-margin-x grid-x">
                                     <div class="grid-x" id="post-<?php echo get_the_ID(); ?>">
                                         <!-- post-thumbnail -->
                                         <div class="imageMargin custom post-thumbnail cell large-6">
