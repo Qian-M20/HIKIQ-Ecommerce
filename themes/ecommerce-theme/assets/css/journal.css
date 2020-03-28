@@ -47,6 +47,11 @@
     text-align: left;
 }
 
+.journalText a {
+    border: none;
+	text-decoration: none;
+}
+
 /* working with margins, padding */
 .imageMargin {
     margin: 0;
