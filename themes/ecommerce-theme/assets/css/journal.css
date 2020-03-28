@@ -8,3 +8,12 @@
     text-transform: uppercase;
 }
 
+.journalTitle:before{
+    content: '';
+    left: 40%;
+    right: 40%;
+    position: absolute;
+    height: 2px;
+    background-color: #0ba987;
+    bottom: 0px;
+} 
