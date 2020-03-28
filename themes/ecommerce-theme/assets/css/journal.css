@@ -26,8 +26,13 @@
     margin: 0 auto;
 }
 
+.journalWrapper {
+    background-color: #c11e1c;
+}
+
 .journalPost p {
     margin-top: 0;
+    color: wheat;
 }
 
 .journalText {
