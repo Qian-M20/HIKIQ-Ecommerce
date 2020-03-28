@@ -45,7 +45,7 @@ get_header();
                                 <div class="cell custom post-list-wrapper grid-margin-x grid-x">
                                     <div class="grid-x" id="post-<?php echo get_the_ID(); ?>">
                                         <!-- post-thumbnail -->
-                                        <div class="custom post-thumbnail cell large-6">
+                                        <div class="imageMargin custom post-thumbnail cell large-6">
                                             <a href="<?php the_permalink(); ?>" target="_blank"><?php the_post_thumbnail('small-thumbnail'); ?></a>
                                         </div><!-- post-thumbnail -->
                                         <div class="journalText cell large-6">
