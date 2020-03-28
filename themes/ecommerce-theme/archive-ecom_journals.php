@@ -35,7 +35,7 @@ get_header();
             if ( $journals->have_posts() ) {
             ?>
                 <div>
-                    <div class="post-list height-1">
+                    <div class="grid-container post-list height-1">
                         <div class="grid-x paddingAround grid-margin-x">
                             
                             <?php
