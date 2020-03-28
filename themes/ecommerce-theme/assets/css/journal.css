@@ -18,6 +18,16 @@
     bottom: 0px;
 } 
 
+/* journal post style */
 .journalPost p {
     margin-top: 0;
+}
+
+.journalText {
+    padding: 0 0 0 40px;
+}
+
+.journalText h4 {
+    font-size: 1.5em;
+    text-align: left;
 }
