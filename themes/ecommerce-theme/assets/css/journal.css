@@ -52,6 +52,11 @@
 	text-decoration: none;
 }
 
+.journalText a:hover {
+    text-decoration: underline;
+    color: white;
+}
+
 /* working with margins, padding */
 .imageMargin {
     margin: 0;
