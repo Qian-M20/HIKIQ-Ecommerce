@@ -10,7 +10,7 @@
 get_header();
 ?>
 
-	<div id="primary" class="content-area grid-container">
+	<div id="primary" class="blogSingle content-area grid-container">
 
 	
 		<main id="main" class="site-main grid-x">

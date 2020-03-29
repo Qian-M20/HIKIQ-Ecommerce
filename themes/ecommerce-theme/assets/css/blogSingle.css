@@ -3,7 +3,7 @@
 }
 
 /* styling header for single page */
-.entry-content > h2{
+.blogSingle .entry-content > h2{
     position: relative;
     text-align: center;
     padding: 50px 15px 0px 15px ;
@@ -13,7 +13,7 @@
     text-transform: uppercase;
 }
 
-.entry-content > h2::before {
+.blogSingle .entry-content > h2::before {
     content: '';
     left: 20%;
     right: 20%;
@@ -97,4 +97,25 @@
     font-family: futura;
     text-align: left;
     color: #333;
+}
+
+@media screen and (min-width: 40em) and (max-width: 63.9375em) {
+    .entry-content .wp-block-group__inner-container {
+        flex-direction: column;
+    }
+
+}
+
+@media screen and (max-width: 39.9375em) {
+
+    .entry-content .wp-block-group__inner-container {
+        flex-direction: column;
+    }
+
+    .singleMain .entry-content p {
+        flex-basis: 50%;
+        font-size: 18px;
+        padding-bottom: 10px;
+        text-align: center;
+    }
 }
