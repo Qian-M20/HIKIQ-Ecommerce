@@ -19,7 +19,9 @@ get_header();
 	
 		<main id="main" class="site-main grid-x">
 
-			<div class="cell large-9 medium-9">
+			<div class="cell large-1 medium-1"></div>
+
+			<div class="cell large-10 medium-10 small-12">
 				<?php
 				while ( have_posts() ) :
 					the_post();
@@ -34,6 +36,8 @@ get_header();
 				endwhile; // End of the loop.
 				?>
 			</div>	
+
+			<div class="cell large-1 medium-1"></div>
 
 		</main><!-- #main -->
 	</div><!-- #primary -->

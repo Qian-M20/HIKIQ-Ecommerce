@@ -61,3 +61,8 @@
 .imageMargin {
     margin: 0;
 }
+/* working with single journal page */
+
+.singleJournal .post-thumbnail img {
+    display: none;
+}
