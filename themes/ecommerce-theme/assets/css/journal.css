@@ -66,3 +66,38 @@
 .singleJournal .post-thumbnail img {
     display: none;
 }
+
+.singleJournal p {
+    margin: 0;
+    font-family: futura;
+    text-align: center;
+    color: #333;
+}
+
+.singleJournal p a {
+    text-decoration: none;
+    font-weight: bold;
+    color: black;
+}
+
+/* Journal single page header style */
+.singleJournal .entry-content > h2{
+    position: relative;
+    text-align: center;
+    padding: 50px 15px 0px 15px ;
+    margin-bottom: 60px;
+    font-family: futura;
+    font-size: 30px;
+    text-transform: uppercase;
+}
+
+.singleJournal .entry-content > h2::before {
+    content: '';
+    left: 20%;
+    right: 20%;
+    position: absolute;
+    height: 2px;
+    background-color: #0ba987;
+    bottom: 0px;
+}
+
