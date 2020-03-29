@@ -70,7 +70,7 @@
 .singleJournal p {
     margin: 0;
     font-family: futura;
-    text-align: center;
+    text-align: left;
     color: #333;
 }
 
@@ -83,7 +83,7 @@
 /* Journal single page header style */
 .singleJournal .entry-content > h2{
     position: relative;
-    text-align: center;
+    text-align: left;
     padding: 23px 15px 0px 15px ;
     margin-bottom: 60px;
     font-family: futura;
@@ -136,4 +136,24 @@
 /* padding inside the box */
 .singleJournal .paddingInside {
     padding: 30px;
+}
+
+/* changing the style of the red header in the yeezy post */
+.singleJournal strong {
+    color: #000 !important;
+    font-size: 25px !important;
+}
+
+.singleJournal .has-strong-red-color strong::before {
+    content: ''!important;
+    left: 1% !important;
+    right: 47% !important;
+    position: absolute !important;
+    height: 2px !important;
+    background-color: #0ba987 !important;
+    bottom: 0px !important;
+}
+
+.singleJournal blockquote p {
+    color: #fff;
 }
