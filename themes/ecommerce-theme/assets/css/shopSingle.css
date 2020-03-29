@@ -108,3 +108,7 @@ span.posted_in {
     border-bottom: 1px solid #f5f5f5;
 }
 
+/* billing detail */
+.woocommerce-billing-fields{
+    margin-left: 20px;
+}
