@@ -15,20 +15,9 @@
 get_header();
 ?>
 
-	<div id="primary" class="content-area grid-container">
+	<div id="primary" class="singleJournal content-area grid-container">
 	
 		<main id="main" class="site-main grid-x">
-	
-			<aside class="cell large-3 medium-3">
-				<?php
-					if ( ! is_active_sidebar( 'sidebar-1' ) ) {
-						return;
-					}
-					?>
-					<div id="secondary" class="widget-area">
-						<?php dynamic_sidebar( 'sidebar-1' ); ?>
-					</div>
-			</aside> 
 
 			<div class="cell large-9 medium-9">
 				<?php
