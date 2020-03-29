@@ -18,6 +18,11 @@
     bottom: 0px;
 } 
 
+h1 {
+    font-size: 2em;
+    margin: 1.5em 0;
+}
+
 /* journal post style */
 .journalPost {
     padding-right: .9375rem;
