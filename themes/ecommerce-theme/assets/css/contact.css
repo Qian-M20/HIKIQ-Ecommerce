@@ -14,9 +14,13 @@
 
 .cont h1{
     font-size: 40px;
+    padding-left: 10px;
+
 }
 .cont h2{
     font-size: 30px;
+    padding-left: 10px;
+
 }
 
 .wp-block-quote.is-style-contact-quote {
