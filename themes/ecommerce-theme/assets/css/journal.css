@@ -83,7 +83,7 @@
 /* Journal single page header style */
 .singleJournal .entry-content > h2{
     position: relative;
-    text-align: left;
+    text-align: center;
     padding: 23px 15px 0px 15px ;
     margin-bottom: 60px;
     font-family: futura;
@@ -139,15 +139,16 @@
 }
 
 /* changing the style of the red header in the yeezy post */
-.singleJournal strong {
+.singleJournal .has-strong-red-color strong {
     color: #000 !important;
     font-size: 25px !important;
+    text-align: left;
 }
 
 .singleJournal .has-strong-red-color strong::before {
     content: ''!important;
-    left: 1% !important;
-    right: 47% !important;
+    left: 20% !important;
+    right: 20% !important;
     position: absolute !important;
     height: 2px !important;
     background-color: #0ba987 !important;
@@ -156,4 +157,29 @@
 
 .singleJournal blockquote p {
     color: #fff;
+}
+
+/* Small devices */
+@media screen and (max-width: 39.9375em) {
+    .singleJournal .entry-content > h2{
+        text-align: center;
+    }
+
+    .singleJournal p {
+        text-align: center;
+    }
+
+    .singleJournal .is-style-blue-heading {
+        text-align: center !important;
+    }
+
+    .singleJournal .is-style-blue-heading::before {
+        content: ''!important;
+        left: 20% !important;
+        right: 20% !important;
+        position: absolute !important;
+        height: 2px !important;
+        background-color: #0ba987 !important;
+        bottom: 0px !important;
+    }
 }
