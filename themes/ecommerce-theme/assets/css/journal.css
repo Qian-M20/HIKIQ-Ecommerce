@@ -159,6 +159,15 @@
     color: #fff;
 }
 
+
+/* removing an unnecessary space between image and paragraph */
+.singleJournal .is-style-fancy-quote {
+    display: none;
+}
+
+
+
+
 /* Small devices */
 @media screen and (max-width: 39.9375em) {
     .singleJournal .entry-content > h2{
@@ -183,3 +192,4 @@
         bottom: 0px !important;
     }
 }
+
