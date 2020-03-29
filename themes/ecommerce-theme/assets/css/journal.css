@@ -84,7 +84,7 @@
 .singleJournal .entry-content > h2{
     position: relative;
     text-align: center;
-    padding: 50px 15px 0px 15px ;
+    padding: 23px 15px 0px 15px ;
     margin-bottom: 60px;
     font-family: futura;
     font-size: 30px;
@@ -101,3 +101,39 @@
     bottom: 0px;
 }
 
+/* second blue header edit */
+
+.singleJournal .is-style-blue-heading {
+    text-align: left !important;
+    font-size: 25px !important;
+    color: #000 !important;
+    margin-bottom: 28px !important;
+}
+
+.singleJournal .is-style-blue-heading::before {
+    content: ''!important;
+    left: 1% !important;
+    right: 47% !important;
+    position: absolute !important;
+    height: 2px !important;
+    background-color: #0ba987 !important;
+    bottom: 0px !important;
+}
+
+/* changing the image size */
+.singleJournal .wp-block-image{
+    display: flex;
+    flex-basis: 50%;
+    justify-content: center;
+    align-items: center;
+}
+
+.singleJournal .wp-block-image img {
+    width: 78% !important;
+    margin: 0 auto;
+}
+
+/* padding inside the box */
+.singleJournal .paddingInside {
+    padding: 30px;
+}

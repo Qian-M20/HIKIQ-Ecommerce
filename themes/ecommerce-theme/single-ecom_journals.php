@@ -21,7 +21,7 @@ get_header();
 
 			<div class="cell large-1 medium-1"></div>
 
-			<div class="cell large-10 medium-10 small-12">
+			<div class="paddingInside cell large-10 medium-10 small-12">
 				<?php
 				while ( have_posts() ) :
 					the_post();
