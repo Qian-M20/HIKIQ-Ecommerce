@@ -1,0 +1,195 @@
+/* Header style */
+.journalTitle {
+    position: relative;
+    text-align: center;
+    padding: 50px 0 0 0;
+    font-family: futura;
+    font-size: 50px;
+    text-transform: uppercase;
+}
+
+.journalTitle:before{
+    content: '';
+    left: 40%;
+    right: 40%;
+    position: absolute;
+    height: 2px;
+    background-color: #c11e1c;
+    bottom: 0px;
+} 
+
+/* journal post style */
+.journalPost {
+    padding-right: .9375rem;
+    padding-left: .9375rem;
+    max-width: 75rem;
+    margin: 0 auto;
+}
+
+.journalWrapper {
+    background-color: #c11e1c;
+}
+
+.journalPost p {
+    margin-top: 0;
+    color: wheat;
+    font-size: 16px;
+}
+
+.journalText {
+    padding: 0 0 0 40px;
+}
+
+.journalText h4 {
+    margin: 0 0 17px 0;
+    color: white;
+    font-size: 1.5em;
+    text-align: left;
+}
+
+.journalText a {
+    border: none;
+	text-decoration: none;
+}
+
+.journalText a:hover {
+    text-decoration: underline;
+    color: white;
+}
+
+/* working with margins, padding */
+.imageMargin {
+    margin: 0;
+}
+/* working with single journal page */
+
+.singleJournal .post-thumbnail img {
+    display: none;
+}
+
+.singleJournal p {
+    margin: 0;
+    font-family: futura;
+    text-align: left;
+    color: #333;
+}
+
+.singleJournal p a {
+    text-decoration: none;
+    font-weight: bold;
+    color: black;
+}
+
+/* Journal single page header style */
+.singleJournal .entry-content > h2{
+    position: relative;
+    text-align: center;
+    padding: 23px 15px 0px 15px ;
+    margin-bottom: 60px;
+    font-family: futura;
+    font-size: 30px;
+    text-transform: uppercase;
+}
+
+.singleJournal .entry-content > h2::before {
+    content: '';
+    left: 20%;
+    right: 20%;
+    position: absolute;
+    height: 2px;
+    background-color: #0ba987;
+    bottom: 0px;
+}
+
+/* second blue header edit */
+
+.singleJournal .is-style-blue-heading {
+    text-align: left !important;
+    font-size: 25px !important;
+    color: #000 !important;
+    margin-bottom: 28px !important;
+}
+
+.singleJournal .is-style-blue-heading::before {
+    content: ''!important;
+    left: 1% !important;
+    right: 47% !important;
+    position: absolute !important;
+    height: 2px !important;
+    background-color: #0ba987 !important;
+    bottom: 0px !important;
+}
+
+/* changing the image size */
+.singleJournal .wp-block-image{
+    display: flex;
+    flex-basis: 50%;
+    justify-content: center;
+    align-items: center;
+}
+
+.singleJournal .wp-block-image img {
+    width: 78% !important;
+    margin: 0 auto;
+}
+
+/* padding inside the box */
+.singleJournal .paddingInside {
+    padding: 30px;
+}
+
+/* changing the style of the red header in the yeezy post */
+.singleJournal .has-strong-red-color strong {
+    color: #000 !important;
+    font-size: 25px !important;
+    text-align: left;
+}
+
+.singleJournal .has-strong-red-color strong::before {
+    content: ''!important;
+    left: 20% !important;
+    right: 20% !important;
+    position: absolute !important;
+    height: 2px !important;
+    background-color: #0ba987 !important;
+    bottom: 0px !important;
+}
+
+.singleJournal blockquote p {
+    color: #fff;
+}
+
+
+/* removing an unnecessary space between image and paragraph */
+.singleJournal .is-style-fancy-quote {
+    display: none;
+}
+
+
+
+
+/* Small devices */
+@media screen and (max-width: 39.9375em) {
+    .singleJournal .entry-content > h2{
+        text-align: center;
+    }
+
+    .singleJournal p {
+        text-align: center;
+    }
+
+    .singleJournal .is-style-blue-heading {
+        text-align: center !important;
+    }
+
+    .singleJournal .is-style-blue-heading::before {
+        content: ''!important;
+        left: 20% !important;
+        right: 20% !important;
+        position: absolute !important;
+        height: 2px !important;
+        background-color: #0ba987 !important;
+        bottom: 0px !important;
+    }
+}
+

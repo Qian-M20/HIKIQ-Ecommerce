@@ -15,22 +15,13 @@
 get_header();
 ?>
 
-	<div id="primary" class="content-area grid-container">
+	<div id="primary" class="singleJournal content-area grid-container">
 	
 		<main id="main" class="site-main grid-x">
-	
-			<aside class="cell large-3 medium-3">
-				<?php
-					if ( ! is_active_sidebar( 'sidebar-1' ) ) {
-						return;
-					}
-					?>
-					<div id="secondary" class="widget-area">
-						<?php dynamic_sidebar( 'sidebar-1' ); ?>
-					</div>
-			</aside> 
 
-			<div class="cell large-9 medium-9">
+			<div class="cell large-1 medium-1"></div>
+
+			<div class="paddingInside cell large-10 medium-10 small-12">
 				<?php
 				while ( have_posts() ) :
 					the_post();
@@ -45,6 +36,8 @@ get_header();
 				endwhile; // End of the loop.
 				?>
 			</div>	
+
+			<div class="cell large-1 medium-1"></div>
 
 		</main><!-- #main -->
 	</div><!-- #primary -->
