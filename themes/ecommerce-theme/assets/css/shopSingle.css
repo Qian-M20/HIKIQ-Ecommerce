@@ -61,11 +61,11 @@
     background-color: #FFFFFF;
     border: 2px solid red;
 }
-/* .woocommerce a.button.alt:hover {
+.woocommerce a.button.alt:hover {
     color: red;
     background-color: #FFFFFF;
     border: 2px solid red;
-} */
+}
 
 .woocommerce button.button.alt{
     margin-left: 0;
