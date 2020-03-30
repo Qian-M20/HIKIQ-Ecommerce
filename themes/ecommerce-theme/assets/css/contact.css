@@ -14,6 +14,12 @@ button.wsf-button.wsf-button-primary {
     font-weight: bold;
     border: none;
 }
+button.wsf-button.wsf-button-primary:hover {
+    color: red;
+    /* border-color: #205493; */
+    background-color: #FFFFFF;
+    border: 2px solid red;
+}
 
 .cont{
     background-color: #c11e1c;
