@@ -6,6 +6,13 @@
     margin-top: 235px;
     /* margin-left: 90px; */
 }
+button.wsf-button.wsf-button-primary {
+    background-color: red;
+    /* border-color: #205493; */
+    color: #FFFFFF;
+    font-size: 19px;
+    font-weight: bold;
+}
 
 .cont{
     background-color: #c11e1c;
