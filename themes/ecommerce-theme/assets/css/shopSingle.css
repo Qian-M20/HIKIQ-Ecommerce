@@ -118,13 +118,6 @@ span.posted_in {
 
 .variable-items-wrapper {
  padding-left: 80px;
-}
-ul {
-    list-style: none;
-    display: flex;
-    margin-block-start: 1em;
-    margin-block-end: 1em;
-    margin-inline-start: 0px;
-    margin-inline-end: 0px;
-    padding-inline-start: 40px;
+ display: flex;
+ flex-direction: column;
 }
