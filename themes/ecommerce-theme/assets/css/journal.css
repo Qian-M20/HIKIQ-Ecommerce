@@ -17,6 +17,11 @@
     background-color: #c11e1c;
     bottom: 0px;
 } 
+/** corrected menubar*/
+h1 {
+    font-size: 2em;
+    margin: 1.5em 0;
+}
 
 /* journal post style */
 .journalPost {

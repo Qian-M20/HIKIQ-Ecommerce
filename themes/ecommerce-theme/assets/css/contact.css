@@ -6,6 +6,20 @@
     margin-top: 235px;
     /* margin-left: 90px; */
 }
+button.wsf-button.wsf-button-primary {
+    background-color: red;
+    /* border-color: #205493; */
+    color: #FFFFFF;
+    font-size: 23px;
+    font-weight: bold;
+    border: none;
+}
+button.wsf-button.wsf-button-primary:hover {
+    color: red;
+    /* border-color: #205493; */
+    background-color: #FFFFFF;
+    border: 2px solid red;
+}
 
 .cont{
     background-color: #c11e1c;
@@ -14,9 +28,13 @@
 
 .cont h1{
     font-size: 40px;
+    padding-left: 10px;
+
 }
 .cont h2{
     font-size: 30px;
+    padding-left: 10px;
+
 }
 
 .wp-block-quote.is-style-contact-quote {
@@ -52,4 +70,5 @@
     font-size: 2em;
     padding: 5px;
 }
+
 }

@@ -112,3 +112,32 @@ Tags:
 }
 
 
+.svg-inline--fa.fa-w-16 {
+    width: 2em;
+}
+
+ul.social-media li a {
+    color: #0ba987;
+    font-size: 2.5em;
+}
+
+ul.social-media li a:hover {
+    background-color: #0ba987;
+color: black;
+}
+
+.svg-inline--fa.fa-w-14 {
+    width: 2em;
+}
+
+/* changes done in slider function */
+
+/* removing the link from journal tab front page */
+.footerJournalWrapper a {
+    text-decoration: none;
+}
+
+.footerJournalWrapper a:hover {
+    text-decoration: underline;
+    color: #000;
+}
