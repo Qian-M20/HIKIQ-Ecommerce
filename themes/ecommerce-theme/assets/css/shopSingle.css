@@ -116,9 +116,9 @@ span.posted_in {
     margin-left: 20px;
 }
 
-/* .variable-items-wrapper {
+.variable-items-wrapper {
  padding-left: 80px;
-} */
+}
 ul {
     list-style: none;
     display: flex;
