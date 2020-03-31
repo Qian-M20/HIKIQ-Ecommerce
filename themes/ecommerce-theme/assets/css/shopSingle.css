@@ -6,7 +6,6 @@
     font-size: 2em;
     font-weight: bolder;
 }
-
 .woocommerce #respond input#submit, .woocommerce a.button, .woocommerce button.button, .woocommerce input.button {
     width:auto;
 
@@ -81,6 +80,7 @@
 
 .woocommerce div.product .woocommerce-tabs .panel {
     padding-left:2em;
+    padding-right:2em;
     color:#676767;
 }
 
