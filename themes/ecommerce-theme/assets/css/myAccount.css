@@ -82,4 +82,6 @@ h2 {
 
 .woocommerce form .form-row input.input-text, .woocommerce form .form-row textarea {
     color:#676767;
+    background-color: transparent;
 }
+
