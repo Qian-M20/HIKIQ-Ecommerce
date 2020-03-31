@@ -5,8 +5,9 @@
 /* styling header for single page */
 .blogSingle .entry-content > h2{
     position: relative;
-    text-align: center;
-    padding: 50px 15px 0px 15px ;
+    text-align: left;
+    padding-left:1em;
+    padding-right:1em;
     margin-bottom: 60px;
     font-family: futura;
     font-size: 30px;
@@ -117,6 +118,7 @@
         font-size: 18px;
         padding-bottom: 10px;
         text-align: left;
+        padding:1em;
     }
 
     .blogSingle .site-main.grid-x {
@@ -127,4 +129,10 @@
     .woocommerce div.product form.cart .button {
         width:100%;
     }
+
+    .blogSingle .entry-content > h2 {
+        font-size:1.5em;
+    }
+
+
 }

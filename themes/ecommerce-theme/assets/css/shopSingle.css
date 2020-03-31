@@ -79,8 +79,8 @@
 }
 
 .woocommerce div.product .woocommerce-tabs .panel {
-    padding-left:2em;
-    padding-right:2em;
+    /* padding-left:2em;
+    padding-right:2em; */
     color:#676767;
 }
 
