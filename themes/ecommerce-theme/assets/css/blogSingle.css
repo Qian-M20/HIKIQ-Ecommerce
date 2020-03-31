@@ -100,13 +100,14 @@
     color: #333;
 }
 
+/* tablet viewport */
 @media screen and (min-width: 40em) and (max-width: 63.9375em) {
     .entry-content .wp-block-group__inner-container {
         flex-direction: column;
     }
 
 }
-
+/* mobile viewport */
 @media screen and (max-width: 39.9375em) {
 
     .entry-content .wp-block-group__inner-container {
@@ -134,10 +135,6 @@
         font-size:1.5em;
     }
 
-    /* #wsf-1-fields-8 {
-        display:flex;
-        justify-content: center;
-    } */
 
 
 }

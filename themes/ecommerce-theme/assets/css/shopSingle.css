@@ -1,6 +1,7 @@
-.singleMain {
-    /* padding-left:2em; */
-}
+/* .singleMain {
+    padding-left:2em;
+} */
+
 .woocommerce div.product p.price, .woocommerce div.product span.price{
     color: #0ba987;
     font-size: 2em;
