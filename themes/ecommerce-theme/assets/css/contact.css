@@ -56,6 +56,12 @@ button.wsf-button.wsf-button-primary:hover {
 }
 
 
+#wsf-1-fields-8 {
+    display:flex;
+    justify-content: center;
+}
+
+
 
 
 @media print, screen and (min-width: 40em){
