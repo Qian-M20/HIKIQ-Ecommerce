@@ -420,3 +420,21 @@ blockquote {
     margin-left: 170px;
     font-size: 23px;
 }
+
+/* tablet and mobile viewport */
+@media screen and (max-width: 63.9375em) {
+    .is-style-red-gallery ul li {
+        display:flex;
+        align-items: center;
+        background-color: transparent;
+        /* height:40vh; */
+    }
+
+
+    .blocks-gallery-grid .blocks-gallery-image figcaption, .blocks-gallery-grid .blocks-gallery-item figcaption, .wp-block-gallery .blocks-gallery-image figcaption, .wp-block-gallery .blocks-gallery-item figcaption {
+        color:white;
+        background-color: tomato;
+        padding: 10px 2px;
+        font-size:20px;
+    }
+}

@@ -56,7 +56,8 @@
     margin-left: 36%;
     margin-bottom: 15px;
 }
- .woocommerce button.button.alt:hover {
+
+.woocommerce button.button.alt:hover {
     color: red;
     background-color: #FFFFFF;
     border: 2px solid red;
@@ -128,7 +129,7 @@ span.posted_in {
 }
 
 .variable-items-wrapper {
- padding-left: 80px;
- display: flex;
- flex-direction: column;
+    padding-left: 80px;
+    display: flex;
+    flex-direction: column;
 }
