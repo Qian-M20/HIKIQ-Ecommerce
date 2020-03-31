@@ -40,7 +40,7 @@
 									while ( $journals->have_posts() ) {
 										$journals->the_post();
 										?>
-										<div class="cell small-12 medium-6 large-4 custom post-list-wrapper grid-margin-x grid-x">
+										<div class="cell small-12 medium-12 large-4 custom post-list-wrapper grid-margin-x grid-x">
 											<div id="post-<?php echo get_the_ID(); ?>">
 												<!-- post-thumbnail -->
 												<div class="custom post-thumbnail">
